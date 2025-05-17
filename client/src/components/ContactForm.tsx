@@ -32,52 +32,52 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
   };
   
   return (
-    <div className="bg-gray-50 p-8 rounded-xl shadow-lg">
-      <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
+    <div className="rounded-2xl overflow-hidden shadow-xl bg-card border border-gray-800 p-8">
+      <h3 className="text-2xl font-bold mb-6 text-foreground">Get in Touch</h3>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
-          <Label htmlFor="name" className="block text-gray-700 font-medium mb-2">Name</Label>
+          <Label htmlFor="name" className="block text-foreground font-medium mb-2">Name</Label>
           <Input 
             type="text" 
             id="name" 
             name="name" 
             value={formData.name}
             onChange={handleChange}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" 
+            className="w-full px-4 py-3 bg-background border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-foreground" 
             placeholder="Your name"
             required
           />
         </div>
         
         <div className="mb-4">
-          <Label htmlFor="email" className="block text-gray-700 font-medium mb-2">Email</Label>
+          <Label htmlFor="email" className="block text-foreground font-medium mb-2">Email</Label>
           <Input 
             type="email" 
             id="email" 
             name="email" 
             value={formData.email}
             onChange={handleChange}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" 
+            className="w-full px-4 py-3 bg-background border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-foreground" 
             placeholder="Your email"
             required
           />
         </div>
         
         <div className="mb-6">
-          <Label htmlFor="message" className="block text-gray-700 font-medium mb-2">Message</Label>
+          <Label htmlFor="message" className="block text-foreground font-medium mb-2">Message</Label>
           <Textarea 
             id="message" 
             name="message" 
             rows={5} 
             value={formData.message}
             onChange={handleChange}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" 
+            className="w-full px-4 py-3 bg-background border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-foreground" 
             placeholder="Your message"
             required
           />
         </div>
         
-        <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-white py-3 rounded-lg font-medium">
+        <Button type="submit" className="w-full bg-accent hover:bg-accent/90 text-white py-3 rounded-lg font-medium">
           Send Message
         </Button>
       </form>
