@@ -4,7 +4,6 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import { apiRequest } from "@/lib/queryClient";
 import { getRandomMessage, successMessages, errorMessages } from "@/lib/contactMessages";
 
 interface ContactFormProps {
@@ -35,7 +34,8 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
     setIsSubmitting(true);
     
     try {
-      const response = await apiRequest('/api/contact', {
+      // Use the browser's fetch API
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
