@@ -16,7 +16,9 @@ interface ContactFormData {
 export async function sendContactEmail(formData: ContactFormData): Promise<boolean> {
   try {
     const to = "jambox.vibe@gmail.com";
-    const from = "no-reply@jambox.io"; // This should be a verified sender in your SendGrid account
+    // Use the same email as the receiver for the from field
+    // This is a workaround until you verify a sender domain in SendGrid
+    const from = "jambox.vibe@gmail.com"; 
 
     await mailService.send({
       to,
