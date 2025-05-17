@@ -50,15 +50,15 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
                 <i className="fas fa-map-marker-alt mt-1 text-accent"></i>
-                <span className="text-gray-300">123 Music Avenue, San Francisco, CA 94107</span>
+                <span className="text-gray-300">Bulevardul Doina Cornea 4E, 1st floor</span>
               </li>
               <li className="flex items-center space-x-3">
                 <i className="fas fa-envelope text-primary"></i>
-                <a href="mailto:info@jambox.io" className="text-gray-300 hover:text-primary transition">info@jambox.io</a>
+                <a href="mailto:jambox.vibe@gmail.com" className="text-gray-300 hover:text-primary transition">jambox.vibe@gmail.com</a>
               </li>
               <li className="flex items-center space-x-3">
                 <i className="fas fa-phone text-secondary"></i>
-                <a href="tel:+14155555555" className="text-gray-300 hover:text-secondary transition">+1 (415) 555-5555</a>
+                <a href="tel:+40727934162" className="text-gray-300 hover:text-secondary transition">+40 727 934 162</a>
               </li>
             </ul>
           </div>
