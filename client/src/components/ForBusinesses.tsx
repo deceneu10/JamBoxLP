@@ -1,47 +1,91 @@
+import { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import BusinessFeature from "./BusinessFeature";
 import Testimonial from "./Testimonial";
 import PricingCard from "./PricingCard";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function ForBusinesses() {
+  const pricingRef = useRef<HTMLDivElement>(null);
+  const [showLeftArrow, setShowLeftArrow] = useState(false);
+  const [showRightArrow, setShowRightArrow] = useState(true);
+  
+  // Function to handle pricing cards scrolling
+  const scrollPricing = (direction: 'left' | 'right') => {
+    if (pricingRef.current) {
+      const scrollAmount = 320; // width of a card + gap
+      const currentScroll = pricingRef.current.scrollLeft;
+      const newScroll = direction === 'left' 
+        ? currentScroll - scrollAmount 
+        : currentScroll + scrollAmount;
+      
+      pricingRef.current.scrollTo({
+        left: newScroll,
+        behavior: 'smooth'
+      });
+    }
+  };
+  
+  // Check scroll position to show/hide arrows
+  const checkScrollPosition = () => {
+    if (pricingRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = pricingRef.current;
+      setShowLeftArrow(scrollLeft > 0);
+      setShowRightArrow(scrollLeft < scrollWidth - clientWidth - 10);
+    }
+  };
+  
+  useEffect(() => {
+    const pricingElement = pricingRef.current;
+    if (pricingElement) {
+      pricingElement.addEventListener('scroll', checkScrollPosition);
+      // Initial check
+      checkScrollPosition();
+      
+      return () => {
+        pricingElement.removeEventListener('scroll', checkScrollPosition);
+      };
+    }
+  }, []);
+  
   const businessFeatures = [
     {
-      icon: <i className="fas fa-door-open text-xl text-primary"></i>,
+      icon: <i className="fas fa-door-open text-xl"></i>,
       title: "Bring Clients In Sooner",
       description: "Advertise your venue's current vibe through the app and attract customers earlier in the evening."
     },
     {
-      icon: <i className="fas fa-hourglass-half text-xl text-primary"></i>,
+      icon: <i className="fas fa-hourglass-half text-xl"></i>,
       title: "Keep Them Engaged Longer",
       description: "Interactive music experiences keep customers entertained and spending more time (and money) at your venue."
     },
     {
-      icon: <i className="fas fa-hand-holding-usd text-xl text-primary"></i>,
+      icon: <i className="fas fa-hand-holding-usd text-xl"></i>,
       title: "Earn Revenue from Music",
       description: "Generate additional income through song request fees, premium memberships, and promotional opportunities."
     },
     {
-      icon: <i className="fas fa-file-invoice-dollar text-xl text-primary"></i>,
+      icon: <i className="fas fa-file-invoice-dollar text-xl"></i>,
       title: "Save Money on Licensing",
       description: "Our partnerships with music licensing companies can reduce your overall music licensing costs."
     },
     {
-      icon: <i className="fas fa-sliders-h text-xl text-primary"></i>,
+      icon: <i className="fas fa-sliders-h text-xl"></i>,
       title: "Maintain Control with Curated Playlists",
       description: "Set boundaries for your music while still allowing customer input. You decide the overall vibe."
     },
     {
-      icon: <i className="fas fa-heart text-xl text-primary"></i>,
+      icon: <i className="fas fa-heart text-xl"></i>,
       title: "Play What Your Clients Love",
       description: "Get real-time data on what music resonates with your specific clientele to optimize your playlists."
     },
     {
-      icon: <i className="fas fa-bullhorn text-xl text-primary"></i>,
+      icon: <i className="fas fa-bullhorn text-xl"></i>,
       title: "Gain Extra Exposure",
       description: "Featured placement in the app for special events and promotions to attract new customers."
     },
     {
-      icon: <i className="fas fa-tags text-xl text-primary"></i>,
+      icon: <i className="fas fa-tags text-xl"></i>,
       title: "Cross Sell with Music Triggers",
       description: "Set up special deals that activate when certain songs play to drive additional sales."
     }
@@ -50,7 +94,7 @@ export default function ForBusinesses() {
   const businessTestimonials = [
     {
       company: "The Coffee House",
-      companyImage: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&h=300",
+      companyImage: "https://images.unsplash.com/photo-1516062423079-7ca13cdc7f5a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300",
       name: "Jessica Miller",
       avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=50&h=50",
       role: "Owner",
@@ -59,7 +103,7 @@ export default function ForBusinesses() {
     },
     {
       company: "Urban Bites Restaurant",
-      companyImage: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&h=300",
+      companyImage: "https://images.unsplash.com/photo-1560624052-449f5ddf0c31?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300",
       name: "Robert Chen",
       avatar: "https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=50&h=50",
       role: "Manager",
@@ -67,13 +111,13 @@ export default function ForBusinesses() {
       text: "JamBox has transformed our dining experience. Customers stay for dessert more often when they're engaged with the music."
     },
     {
-      company: "Elevation Lounge",
-      companyImage: "https://images.unsplash.com/photo-1572116469696-31de0f17cc34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&h=300",
+      company: "Elevation Gym",
+      companyImage: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300",
       name: "David Wilson",
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=50&h=50",
       role: "Owner",
       rating: 5,
-      text: "Our drink sales have increased by 30% during weeknights. JamBox creates a fun, interactive atmosphere even on slower nights."
+      text: "Our member retention has increased by 30% since we installed JamBox. People love being able to influence the workout playlist."
     }
   ];
 
@@ -90,7 +134,7 @@ export default function ForBusinesses() {
       ],
       buttonText: "Get Started",
       buttonVariant: "outline" as const,
-      borderColor: "border-gray-300"
+      borderColor: "border-secondary"
     },
     {
       name: "Pro",
@@ -122,16 +166,16 @@ export default function ForBusinesses() {
       ],
       buttonText: "Contact Sales",
       buttonVariant: "outline" as const,
-      borderColor: "border-dark"
+      borderColor: "border-accent"
     }
   ];
 
   return (
-    <section id="for-businesses" className="py-20 bg-gray-100">
+    <section id="for-businesses" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Turn Music Into Profit</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-accent to-secondary">Turn Music Into Profit</h2>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Transform your venue's atmosphere with interactive music experiences that keep customers engaged longer and spending more.
           </p>
         </div>
@@ -150,7 +194,7 @@ export default function ForBusinesses() {
         
         {/* Business Testimonials */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-center mb-8">Trusted by Businesses Everywhere</h3>
+          <h3 className="text-2xl font-bold text-center mb-8 text-foreground">Trusted by Businesses Everywhere</h3>
           <div className="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0">
             {businessTestimonials.map((testimonial, index) => (
               <Testimonial
@@ -167,28 +211,83 @@ export default function ForBusinesses() {
           </div>
         </div>
         
-        {/* Pricing Section */}
+        {/* Pricing Section with Swipable Mobile Support */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-center mb-8">Pricing Plans</h3>
-          <div className="flex flex-col lg:flex-row lg:space-x-6 space-y-6 lg:space-y-0">
+          <h3 className="text-2xl font-bold text-center mb-8 text-foreground">Pricing Plans</h3>
+          
+          {/* Mobile swipe controls */}
+          <div className="relative">
+            <div className="overflow-x-auto scrollbar-hide pb-4" ref={pricingRef}>
+              <div className="flex space-x-6 min-w-max px-4">
+                {pricingPlans.map((plan, index) => (
+                  <div key={index} className="min-w-[280px] md:min-w-0 md:flex-1">
+                    <PricingCard
+                      name={plan.name}
+                      description={plan.description}
+                      price={plan.price}
+                      features={plan.features}
+                      buttonText={plan.buttonText}
+                      buttonVariant={plan.buttonVariant}
+                      highlighted={plan.highlighted}
+                      borderColor={plan.borderColor}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+            
+            {/* Mobile scroll arrows */}
+            <div className="md:hidden">
+              {showLeftArrow && (
+                <button 
+                  onClick={() => scrollPricing('left')} 
+                  className="absolute left-0 top-1/2 -translate-y-1/2 bg-background/80 p-2 rounded-full shadow-lg"
+                >
+                  <ChevronLeft className="h-6 w-6 text-primary" />
+                </button>
+              )}
+              {showRightArrow && (
+                <button 
+                  onClick={() => scrollPricing('right')}
+                  className="absolute right-0 top-1/2 -translate-y-1/2 bg-background/80 p-2 rounded-full shadow-lg"
+                >
+                  <ChevronRight className="h-6 w-6 text-primary" />
+                </button>
+              )}
+            </div>
+            
+            {/* Dots indicator for mobile */}
+            <div className="flex justify-center space-x-2 mt-4 md:hidden">
+              {pricingPlans.map((_, index) => (
+                <div 
+                  key={index} 
+                  className={`w-2 h-2 rounded-full ${index === 1 ? 'bg-primary' : 'bg-gray-600'}`}
+                />
+              ))}
+            </div>
+          </div>
+          
+          {/* Desktop view */}
+          <div className="hidden md:flex md:space-x-6">
             {pricingPlans.map((plan, index) => (
-              <PricingCard
-                key={index}
-                name={plan.name}
-                description={plan.description}
-                price={plan.price}
-                features={plan.features}
-                buttonText={plan.buttonText}
-                buttonVariant={plan.buttonVariant}
-                highlighted={plan.highlighted}
-                borderColor={plan.borderColor}
-              />
+              <div key={index} className="flex-1">
+                <PricingCard
+                  name={plan.name}
+                  description={plan.description}
+                  price={plan.price}
+                  features={plan.features}
+                  buttonText={plan.buttonText}
+                  buttonVariant={plan.buttonVariant}
+                  highlighted={plan.highlighted}
+                  borderColor={plan.borderColor}
+                />
+              </div>
             ))}
           </div>
         </div>
         
         <div className="text-center">
-          <Button className="bg-primary hover:bg-primary/90 text-white px-10 py-4 rounded-full font-bold text-lg transform hover:scale-105 transition">
+          <Button className="bg-accent hover:bg-accent/90 text-white px-10 py-4 rounded-full font-bold text-lg transform hover:scale-105 transition">
             Sign Up as a Venue
           </Button>
         </div>

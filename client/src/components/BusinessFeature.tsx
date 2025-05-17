@@ -8,13 +8,13 @@ interface BusinessFeatureProps {
 
 export default function BusinessFeature({ icon, title, description }: BusinessFeatureProps) {
   return (
-    <div className="flex items-start space-x-6 bg-white p-6 rounded-xl shadow-md">
-      <div className="bg-primary bg-opacity-10 p-3 rounded-lg">
+    <div className="flex items-start space-x-6 bg-card p-6 rounded-xl shadow-lg border border-gray-800">
+      <div className="bg-accent p-3 rounded-lg text-white">
         {icon}
       </div>
       <div>
-        <h3 className="text-xl font-bold mb-2">{title}</h3>
-        <p className="text-gray-600">{description}</p>
+        <h3 className="text-xl font-bold mb-2 text-foreground">{title}</h3>
+        <p className="text-gray-400">{description}</p>
       </div>
     </div>
   );

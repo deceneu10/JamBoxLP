@@ -35,7 +35,7 @@ export default function Testimonial({ name, avatar, rating, text, role, company,
   const isBusinessTestimonial = company && companyImage;
 
   return (
-    <div className="bg-white p-6 rounded-xl shadow-lg flex-1">
+    <div className="bg-card p-6 rounded-xl shadow-lg border border-gray-800 flex-1">
       {isBusinessTestimonial && (
         <>
           <img
@@ -43,7 +43,7 @@ export default function Testimonial({ name, avatar, rating, text, role, company,
             alt={`${company} interior`}
             className="w-full h-40 object-cover rounded-lg mb-4"
           />
-          <h4 className="font-bold text-lg">{company}</h4>
+          <h4 className="font-bold text-lg text-foreground">{company}</h4>
         </>
       )}
       
@@ -54,15 +54,15 @@ export default function Testimonial({ name, avatar, rating, text, role, company,
           className="w-12 h-12 rounded-full object-cover mr-4"
         />
         <div>
-          <h4 className="font-bold">{name}</h4>
-          {role && <p className="text-sm text-gray-500">{role}</p>}
+          <h4 className="font-bold text-foreground">{name}</h4>
+          {role && <p className="text-sm text-gray-400">{role}</p>}
           <div className="flex text-yellow-400">
             {renderStars(rating)}
           </div>
         </div>
       </div>
       
-      <p className="text-gray-600">{text}</p>
+      <p className="text-gray-400">{text}</p>
     </div>
   );
 }

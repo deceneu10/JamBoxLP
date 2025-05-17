@@ -25,11 +25,11 @@ export default function ForUsers() {
   ];
 
   return (
-    <section id="for-users" className="py-20 bg-light">
+    <section id="for-users" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Be the DJ</h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Be the DJ</h2>
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Take control of the music at your favorite venues. Vote for songs, earn rewards, and discover new places to enjoy music with friends.
           </p>
         </div>
@@ -58,14 +58,37 @@ export default function ForUsers() {
             description="Find JamBox-enabled venues near you with real-time information about current playlists and vibe."
             color="accent"
             extraContent={
-              <div className="mt-6 rounded-lg overflow-hidden shadow border border-gray-200">
-                <img 
-                  src="https://pixabay.com/get/g7fd2fca1cb5cc2967a6316113175d1752e2a340d5b05bbc83bd77f6f0f87bdfb5828a796a3c07bd17a26f453b3712c8451055629a7f731891430ec1397c1ad4d_1280.jpg" 
-                  alt="Map showing nearby JamBox venues" 
-                  className="w-full h-auto"
-                />
-                <div className="p-3 bg-white">
-                  <p className="font-medium text-sm">3 JamBox venues nearby</p>
+              <div className="mt-6 rounded-lg overflow-hidden shadow-lg border border-accent">
+                <div className="relative h-64 bg-gray-900">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91158.1250381261!2d26.03223675000001!3d44.43789365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1f93abf3cad4f%3A0xac0632e37c9ca628!2sBucharest%2C%20Romania!5e0!3m2!1sen!2sus!4v1654956851878!5m2!1sen!2sus"
+                    className="absolute inset-0 w-full h-full"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                    <div className="w-8 h-8 bg-primary rounded-full animate-ping opacity-75"></div>
+                  </div>
+                  <div className="absolute inset-0">
+                    <div className="absolute top-1/4 left-1/3 w-4 h-4 bg-secondary rounded-full"></div>
+                    <div className="absolute top-1/2 left-1/2 w-4 h-4 bg-accent rounded-full"></div>
+                    <div className="absolute top-2/3 right-1/3 w-4 h-4 bg-primary rounded-full"></div>
+                    <div className="absolute bottom-1/4 right-1/4 w-4 h-4 bg-secondary rounded-full"></div>
+                    <div className="absolute top-1/3 right-1/4 w-4 h-4 bg-accent rounded-full"></div>
+                    <div className="absolute bottom-1/3 left-1/4 w-4 h-4 bg-primary rounded-full"></div>
+                    <div className="absolute top-1/4 right-1/4 w-4 h-4 bg-secondary rounded-full"></div>
+                    <div className="absolute bottom-1/4 left-1/3 w-4 h-4 bg-accent rounded-full"></div>
+                    <div className="absolute top-1/2 right-1/4 w-4 h-4 bg-primary rounded-full"></div>
+                    <div className="absolute bottom-1/3 right-1/3 w-4 h-4 bg-secondary rounded-full"></div>
+                    <div className="absolute top-1/3 left-1/2 w-4 h-4 bg-accent rounded-full"></div>
+                    <div className="absolute bottom-1/2 left-1/2 w-4 h-4 bg-primary rounded-full"></div>
+                  </div>
+                </div>
+                <div className="p-3 bg-card">
+                  <p className="font-medium text-sm text-foreground">12 JamBox venues in Bucharest</p>
+                  <p className="text-xs text-gray-400">4 pubs and 8 gyms now playing</p>
                 </div>
               </div>
             }
@@ -74,6 +97,7 @@ export default function ForUsers() {
         
         {/* User Testimonials */}
         <div className="mb-16">
+          <h3 className="text-2xl font-bold text-center mb-8 text-foreground">What Users Say</h3>
           <div className="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0">
             {testimonials.map((testimonial, index) => (
               <Testimonial 
