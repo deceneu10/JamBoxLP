@@ -2,6 +2,7 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import path from "path";
+import { sendContactEmail } from "./email";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // API routes - prefix with /api
@@ -9,8 +10,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
     res.json({ status: "ok" });
   });
 
-  // Contact form submission endpoint (demo only - no actual storage)
-  app.post("/api/contact", (req, res) => {
+  // Contact form submission endpoint with real email sending
+  app.post("/api/contact", async (req, res) => {
     const { name, email, message } = req.body;
     
     // Validate required fields
@@ -21,12 +22,28 @@ export async function registerRoutes(app: Express): Promise<Server> {
       });
     }
 
-    // In a real app, you would store this data or send an email
-    // For demo purposes, just return success
-    res.json({ 
-      success: true, 
-      message: "Thank you for your message. We'll be in touch soon!" 
-    });
+    try {
+      // Send email via SendGrid
+      const success = await sendContactEmail({ name, email, message });
+      
+      if (success) {
+        return res.json({ 
+          success: true, 
+          message: "Thank you for your message. We'll be in touch soon!" 
+        });
+      } else {
+        return res.status(500).json({ 
+          success: false, 
+          message: "Failed to send your message. Please try again later." 
+        });
+      }
+    } catch (error) {
+      console.error("Contact form error:", error);
+      return res.status(500).json({ 
+        success: false, 
+        message: "An unexpected error occurred while sending your message." 
+      });
+    }
   });
 
   const httpServer = createServer(app);
