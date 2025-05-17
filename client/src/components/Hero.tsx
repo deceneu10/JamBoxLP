@@ -19,7 +19,7 @@ export default function Hero() {
                 </Button>
               </a>
               <a href="#for-businesses">
-                <Button variant="outline" className="border-2 border-white text-white hover:bg-white/10 px-8 py-3 rounded-full font-bold text-center w-full sm:w-auto">
+                <Button className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-3 rounded-full font-bold text-center w-full sm:w-auto">
                   For Businesses
                 </Button>
               </a>
