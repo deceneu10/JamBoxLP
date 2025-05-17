@@ -215,29 +215,30 @@ export default function ForBusinesses() {
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-center mb-8 text-foreground">Pricing Plans</h3>
           
-          {/* Mobile swipe controls */}
+          {/* Responsive pricing section - Mobile swipe view for small screens, regular grid for desktop */}
           <div className="relative">
-            <div className="overflow-x-auto scrollbar-hide pb-4" ref={pricingRef}>
-              <div className="flex space-x-6 min-w-max px-4">
-                {pricingPlans.map((plan, index) => (
-                  <div key={index} className="min-w-[280px] md:min-w-0 md:flex-1">
-                    <PricingCard
-                      name={plan.name}
-                      description={plan.description}
-                      price={plan.price}
-                      features={plan.features}
-                      buttonText={plan.buttonText}
-                      buttonVariant={plan.buttonVariant}
-                      highlighted={plan.highlighted}
-                      borderColor={plan.borderColor}
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
-            
-            {/* Mobile scroll arrows */}
+            {/* Mobile view (visible only on small screens) */}
             <div className="md:hidden">
+              <div className="overflow-x-auto scrollbar-hide pb-4" ref={pricingRef}>
+                <div className="flex space-x-6 min-w-max px-4">
+                  {pricingPlans.map((plan, index) => (
+                    <div key={index} className="min-w-[280px]">
+                      <PricingCard
+                        name={plan.name}
+                        description={plan.description}
+                        price={plan.price}
+                        features={plan.features}
+                        buttonText={plan.buttonText}
+                        buttonVariant={plan.buttonVariant}
+                        highlighted={plan.highlighted}
+                        borderColor={plan.borderColor}
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+              
+              {/* Mobile scroll arrows */}
               {showLeftArrow && (
                 <button 
                   onClick={() => scrollPricing('left')} 
@@ -254,35 +255,35 @@ export default function ForBusinesses() {
                   <ChevronRight className="h-6 w-6 text-primary" />
                 </button>
               )}
+              
+              {/* Dots indicator for mobile */}
+              <div className="flex justify-center space-x-2 mt-4">
+                {pricingPlans.map((_, index) => (
+                  <div 
+                    key={index} 
+                    className={`w-2 h-2 rounded-full ${index === 1 ? 'bg-primary' : 'bg-gray-600'}`}
+                  />
+                ))}
+              </div>
             </div>
             
-            {/* Dots indicator for mobile */}
-            <div className="flex justify-center space-x-2 mt-4 md:hidden">
-              {pricingPlans.map((_, index) => (
-                <div 
-                  key={index} 
-                  className={`w-2 h-2 rounded-full ${index === 1 ? 'bg-primary' : 'bg-gray-600'}`}
-                />
+            {/* Desktop view (visible only on medium screens and up) */}
+            <div className="hidden md:flex md:space-x-6">
+              {pricingPlans.map((plan, index) => (
+                <div key={index} className="flex-1">
+                  <PricingCard
+                    name={plan.name}
+                    description={plan.description}
+                    price={plan.price}
+                    features={plan.features}
+                    buttonText={plan.buttonText}
+                    buttonVariant={plan.buttonVariant}
+                    highlighted={plan.highlighted}
+                    borderColor={plan.borderColor}
+                  />
+                </div>
               ))}
             </div>
-          </div>
-          
-          {/* Desktop view */}
-          <div className="hidden md:flex md:space-x-6">
-            {pricingPlans.map((plan, index) => (
-              <div key={index} className="flex-1">
-                <PricingCard
-                  name={plan.name}
-                  description={plan.description}
-                  price={plan.price}
-                  features={plan.features}
-                  buttonText={plan.buttonText}
-                  buttonVariant={plan.buttonVariant}
-                  highlighted={plan.highlighted}
-                  borderColor={plan.borderColor}
-                />
-              </div>
-            ))}
           </div>
         </div>
         
