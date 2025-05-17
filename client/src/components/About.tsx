@@ -11,22 +11,22 @@ export default function About() {
     {
       name: "Angel Ionut Cerchia",
       role: "Product Lead & Tech Developer",
-      avatar: "https://images.unsplash.com/photo-1608681299041-cc19878f79f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150"
+      avatar: "/images/team/angel-ionut-cerchia.jpg"
     },
     {
       name: "Marius Baraitaru",
       role: "Business Developer",
-      avatar: "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150"
+      avatar: "/images/team/marius-baraitaru.jpg"
     },
     {
       name: "Bogdan Cardos",
       role: "Lead Developer",
-      avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150"
+      avatar: "/images/team/bogdan-cardos.jpg"
     },
     {
       name: "Catalin Niculai",
       role: "Marketing & Client Engagement",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150"
+      avatar: "/images/team/catalin-niculai.jpg"
     }
   ];
 
