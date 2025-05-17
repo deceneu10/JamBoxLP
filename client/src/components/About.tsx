@@ -9,19 +9,24 @@ interface TeamMember {
 export default function About() {
   const teamMembers: TeamMember[] = [
     {
-      name: "Alex Johnson",
-      role: "CEO & Founder",
-      avatar: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&h=150"
+      name: "Angel Ionut Cerchia",
+      role: "Product Lead & Tech Developer",
+      avatar: "https://images.unsplash.com/photo-1608681299041-cc19878f79f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150"
     },
     {
-      name: "Sarah Park",
-      role: "CTO",
-      avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&h=150"
+      name: "Marius Baraitaru",
+      role: "Business Developer",
+      avatar: "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150"
     },
     {
-      name: "Michael Lee",
-      role: "Head of Business",
-      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&h=150"
+      name: "Bogdan Cardos",
+      role: "Lead Developer",
+      avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150"
+    },
+    {
+      name: "Catalin Niculai",
+      role: "Marketing & Client Engagement",
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150"
     }
   ];
 
@@ -46,10 +51,10 @@ export default function About() {
             {/* Team Section */}
             <div className="rounded-2xl overflow-hidden shadow-xl bg-card border border-gray-800 p-8">
               <h3 className="text-2xl font-bold mb-6 text-foreground">Our Team</h3>
-              <div className="grid grid-cols-3 gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 {teamMembers.map((member, index) => (
                   <div key={index} className="text-center bg-background rounded-xl p-4 shadow-md">
-                    <div className="w-20 h-20 rounded-full border-2 border-primary mx-auto mb-3 overflow-hidden">
+                    <div className="w-24 h-24 rounded-full border-2 border-primary mx-auto mb-3 overflow-hidden">
                       <img 
                         src={member.avatar} 
                         alt={`${member.name} avatar`} 
