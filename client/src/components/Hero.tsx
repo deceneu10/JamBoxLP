@@ -25,9 +25,9 @@ export default function Hero() {
                 </Button>
               </a>
             </div>
-            <div className="flex justify-center mt-8 sm:mt-6">
-              <a href="https://play.jambox.top/" target="_blank" rel="noopener noreferrer">
-                <Button className="bg-accent hover:bg-accent/90 text-white px-12 py-6 sm:px-16 sm:py-8 rounded-full font-bold text-xl sm:text-2xl shadow-lg shadow-accent/30 transform hover:scale-105 transition-all animate-pulse w-full">
+            <div className="flex justify-center mt-16 sm:mt-6">
+              <a href="https://play.jambox.top/" target="_blank" rel="noopener noreferrer" className="w-full">
+                <Button className="bg-accent hover:bg-accent/90 text-white px-16 py-8 sm:px-16 sm:py-8 rounded-full font-bold text-2xl sm:text-2xl shadow-lg shadow-accent/30 transform hover:scale-105 transition-all animate-pulse w-full">
                   PLAY DEMO!
                 </Button>
               </a>
