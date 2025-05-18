@@ -53,7 +53,7 @@ export default function ForUsers() {
           
           {/* Feature Card 3 */}
           <FeatureCard 
-            icon={<i className="fas fa-map-marked-alt text-2xl"></i>}
+            icon={null}
             title="Discover Nearby Venues"
             description="Find JamBox-enabled venues near you with real-time information about current playlists and vibe."
             color="accent"
@@ -86,29 +86,9 @@ export default function ForUsers() {
                     <div className="absolute bottom-1/2 left-1/2 w-4 h-4 bg-primary rounded-full"></div>
                   </div>
                 </div>
-                <div className="p-3 bg-card">
-                  <p className="font-medium text-sm text-foreground">12 JamBox venues in Bucharest</p>
-                  <p className="text-xs text-gray-400">4 pubs and 8 gyms now playing</p>
-                </div>
               </div>
             }
           />
-        </div>
-        
-        {/* User Testimonials */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-bold text-center mb-8 text-foreground">What Users Say</h3>
-          <div className="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0">
-            {testimonials.map((testimonial, index) => (
-              <Testimonial 
-                key={index}
-                name={testimonial.name}
-                avatar={testimonial.avatar}
-                rating={testimonial.rating}
-                text={testimonial.text}
-              />
-            ))}
-          </div>
         </div>
         
         <div className="text-center">

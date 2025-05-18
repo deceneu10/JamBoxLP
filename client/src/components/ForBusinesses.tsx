@@ -139,7 +139,7 @@ export default function ForBusinesses() {
     {
       name: "Pro",
       description: "For established venues",
-      price: "$49",
+      price: "$29/month",
       features: [
         { text: "Advanced playlist curation" },
         { text: "Unlimited song requests" },
@@ -151,22 +151,6 @@ export default function ForBusinesses() {
       buttonText: "Choose Pro",
       highlighted: true,
       borderColor: "border-primary"
-    },
-    {
-      name: "Enterprise",
-      description: "For multiple locations",
-      price: "$199",
-      features: [
-        { text: "Everything in Pro plan" },
-        { text: "Multi-location management" },
-        { text: "Priority app listings" },
-        { text: "API access" },
-        { text: "Custom integrations" },
-        { text: "Dedicated account manager" }
-      ],
-      buttonText: "Contact Sales",
-      buttonVariant: "outline" as const,
-      borderColor: "border-accent"
     }
   ];
 
@@ -288,9 +272,11 @@ export default function ForBusinesses() {
         </div>
         
         <div className="text-center">
-          <Button className="bg-accent hover:bg-accent/90 text-white px-10 py-4 rounded-full font-bold text-lg transform hover:scale-105 transition">
-            Sign Up as a Venue
-          </Button>
+          <a href="https://tally.so/r/waox6W" target="_blank" rel="noopener noreferrer">
+            <Button className="bg-accent hover:bg-accent/90 text-white px-10 py-4 rounded-full font-bold text-lg transform hover:scale-105 transition">
+              Sign Up as a Venue
+            </Button>
+          </a>
         </div>
       </div>
     </section>
