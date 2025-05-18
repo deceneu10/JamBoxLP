@@ -33,7 +33,7 @@ export default function Hero() {
               </a>
             </div>
           </div>
-          <div className="md:w-1/2 relative flex justify-center">
+          <div className="hidden md:flex md:w-1/2 relative justify-center">
             <div className="w-full max-w-sm px-4 aspect-[9/16] relative bg-background rounded-3xl shadow-2xl border-2 border-primary/50 overflow-hidden">
               <img 
                 src="https://images.unsplash.com/photo-1501612780327-45045538702b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&h=900" 
