@@ -13,7 +13,7 @@ export default function Hero() {
             <p className="text-xl mb-8 text-white">
               Transform how people experience music at venues. Create interactive experiences where everyone gets a say in what plays next.
             </p>
-            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-4">
               <a href="#for-users">
                 <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-full font-bold text-center w-full sm:w-auto">
                   For Users
@@ -22,6 +22,13 @@ export default function Hero() {
               <a href="#for-businesses">
                 <Button className="bg-secondary hover:bg-secondary/90 text-white px-8 py-3 rounded-full font-bold text-center w-full sm:w-auto">
                   For Businesses
+                </Button>
+              </a>
+            </div>
+            <div className="flex justify-center">
+              <a href="https://play.jambox.top/" target="_blank" rel="noopener noreferrer">
+                <Button className="bg-accent hover:bg-accent/90 text-white px-10 py-4 rounded-full font-bold text-lg shadow-lg shadow-accent/30 transform hover:scale-105 transition-all animate-pulse">
+                  PLAY DEMO!
                 </Button>
               </a>
             </div>
