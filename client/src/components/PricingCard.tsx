@@ -51,16 +51,18 @@ export default function PricingCard({
         ))}
       </ul>
       
-      <Button 
-        variant={buttonVariant === "outline" ? "outline" : "default"}
-        className={
-          buttonVariant === "outline" 
-            ? `w-full border-2 ${borderColor} hover:bg-opacity-10 transition text-foreground` 
-            : "w-full bg-primary hover:bg-primary/90 transition text-white"
-        }
-      >
-        {buttonText}
-      </Button>
+      <a href="https://tally.so/r/waox6W" target="_blank" rel="noopener noreferrer" className="w-full">
+        <Button 
+          variant={buttonVariant === "outline" ? "outline" : "default"}
+          className={
+            buttonVariant === "outline" 
+              ? `w-full border-2 ${borderColor} hover:bg-opacity-10 transition text-foreground` 
+              : "w-full bg-primary hover:bg-primary/90 transition text-white"
+          }
+        >
+          {buttonText}
+        </Button>
+      </a>
     </div>
   );
 }

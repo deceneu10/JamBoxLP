@@ -70,9 +70,11 @@ export default function ForUsers() {
         </div>
         
         <div className="text-center">
-          <Button className="bg-primary hover:bg-primary/90 text-white px-10 py-4 rounded-full font-bold text-lg transform hover:scale-105 transition">
-            Sign Up Now
-          </Button>
+          <a href="https://tally.so/r/waox6W" target="_blank" rel="noopener noreferrer">
+            <Button className="bg-primary hover:bg-primary/90 text-white px-10 py-4 rounded-full font-bold text-lg transform hover:scale-105 transition">
+              Sign Up Now
+            </Button>
+          </a>
         </div>
       </div>
     </section>
