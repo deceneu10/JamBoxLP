@@ -1,15 +1,18 @@
 import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-
-const navLinks = [
-  { title: "For Users", href: "#for-users" },
-  { title: "For Businesses", href: "#for-businesses" },
-  { title: "About", href: "#about" },
-];
+import LanguageSelector from "./LanguageSelector";
+import { useLanguage } from "@/lib/LanguageContext";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const { t } = useLanguage();
+
+  const navLinks = [
+    { key: "navbar.users", href: "#for-users" },
+    { key: "navbar.businesses", href: "#for-businesses" },
+    { key: "navbar.about", href: "#about" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
