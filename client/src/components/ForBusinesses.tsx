@@ -10,6 +10,7 @@ export default function ForBusinesses() {
   const pricingRef = useRef<HTMLDivElement>(null);
   const [showLeftArrow, setShowLeftArrow] = useState(false);
   const [showRightArrow, setShowRightArrow] = useState(true);
+  const { t } = useLanguage();
   
   // Function to handle pricing cards scrolling
   const scrollPricing = (direction: 'left' | 'right') => {
@@ -124,32 +125,30 @@ export default function ForBusinesses() {
 
   const pricingPlans = [
     {
-      name: "Free",
-      description: "Essential tools to get started",
-      price: "$0",
+      name: t("pricing.free.name"),
+      description: t("pricing.free.description"),
+      price: t("pricing.free.price"),
       features: [
-        { text: "Basic playlist management" },
-        { text: "Up to 50 song requests per day" },
-        { text: "Standard app listing" },
-        { text: "Basic analytics" }
+        { text: t("pricing.free.feature1") },
+        { text: t("pricing.free.feature2") },
+        { text: t("pricing.free.feature3") }
       ],
-      buttonText: "Get Started",
+      buttonText: t("pricing.free.button"),
       buttonVariant: "outline" as const,
       borderColor: "border-secondary"
     },
     {
-      name: "Pro",
-      description: "For established venues",
-      price: "$29/month",
+      name: t("pricing.pro.name"),
+      description: t("pricing.pro.description"),
+      price: t("pricing.pro.price"),
       features: [
-        { text: "Advanced playlist curation" },
-        { text: "Unlimited song requests" },
-        { text: "Featured app listing" },
-        { text: "Detailed analytics dashboard" },
-        { text: "Custom branding" },
-        { text: "Email support" }
+        { text: t("pricing.pro.feature1") },
+        { text: t("pricing.pro.feature2") },
+        { text: t("pricing.pro.feature3") },
+        { text: t("pricing.pro.feature4") },
+        { text: t("pricing.pro.feature5") }
       ],
-      buttonText: "Choose Pro",
+      buttonText: t("pricing.pro.button"),
       highlighted: true,
       borderColor: "border-primary"
     }
@@ -159,29 +158,36 @@ export default function ForBusinesses() {
     <section id="for-businesses" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-accent to-secondary">Turn Music Into Profit</h2>
+          <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-accent to-secondary">{t("business.title")}</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Transform your venue's atmosphere with interactive music experiences that keep customers engaged longer and spending more.
+            {t("business.subtitle")}
           </p>
         </div>
         
         {/* Feature Grid */}
         <div className="grid md:grid-cols-2 gap-8 mb-16">
-          {businessFeatures.map((feature, index) => (
-            <BusinessFeature
-              key={index}
-              icon={feature.icon}
-              title={feature.title}
-              description={feature.description}
-            />
-          ))}
+          <BusinessFeature
+            icon={<i className="fas fa-users text-xl"></i>}
+            title={t("business.feature1.title")}
+            description={t("business.feature1.description")}
+          />
+          <BusinessFeature
+            icon={<i className="fas fa-chart-line text-xl"></i>}
+            title={t("business.feature2.title")}
+            description={t("business.feature2.description")}
+          />
+          <BusinessFeature
+            icon={<i className="fas fa-sliders-h text-xl"></i>}
+            title={t("business.feature3.title")}
+            description={t("business.feature3.description")}
+          />
         </div>
         
 
         
         {/* Pricing Section with Swipable Mobile Support */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-center mb-8 text-foreground">Pricing Plans</h3>
+          <h3 className="text-2xl font-bold text-center mb-8 text-foreground">{t("pricing.title")}</h3>
           
           {/* Responsive pricing section - Mobile swipe view for small screens, regular grid for desktop */}
           <div className="relative">
