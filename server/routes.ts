@@ -12,10 +12,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   // Contact form submission endpoint with real email sending
   app.post("/api/contact", async (req, res) => {
-    const { name, email, message } = req.body;
+    const { name, email, establishmentName, establishmentType, message } = req.body;
     
     // Validate required fields
-    if (!name || !email || !message) {
+    if (!name || !email || !establishmentName || !establishmentType || !message) {
       return res.status(400).json({ 
         success: false, 
         message: "All fields are required" 
@@ -24,7 +24,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
     try {
       // Send email via SendGrid
-      const success = await sendContactEmail({ name, email, message });
+      const success = await sendContactEmail({ name, email, establishmentName, establishmentType, message });
       
       if (success) {
         return res.json({ 

@@ -25,18 +25,22 @@ export async function sendContactEmail(formData: ContactFormData): Promise<boole
     await mailService.send({
       to,
       from,
-      subject: `New Contact Form Message from ${formData.name}`,
+      subject: `New Business Inquiry from ${formData.name} - ${formData.establishmentName}`,
       text: `
 Name: ${formData.name}
 Email: ${formData.email}
+Establishment Name: ${formData.establishmentName}
+Establishment Type: ${formData.establishmentType}
 
 Message:
 ${formData.message}
       `,
       html: `
-<h3>New Contact Form Submission</h3>
-<p><strong>Name:</strong> ${formData.name}</p>
+<h3>New Business Inquiry</h3>
+<p><strong>Contact Name:</strong> ${formData.name}</p>
 <p><strong>Email:</strong> ${formData.email}</p>
+<p><strong>Establishment Name:</strong> ${formData.establishmentName}</p>
+<p><strong>Establishment Type:</strong> ${formData.establishmentType}</p>
 <p><strong>Message:</strong></p>
 <p>${formData.message.replace(/\n/g, '<br>')}</p>
       `,

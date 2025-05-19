@@ -51,7 +51,7 @@ export default function PricingCard({
         ))}
       </ul>
       
-      <a href="https://tally.so/r/waox6W" target="_blank" rel="noopener noreferrer" className="w-full">
+      <a href="#contact-section" className="w-full">
         <Button 
           variant={buttonVariant === "outline" ? "outline" : "default"}
           className={
