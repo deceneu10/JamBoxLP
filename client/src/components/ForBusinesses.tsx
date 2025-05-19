@@ -176,24 +176,7 @@ export default function ForBusinesses() {
           ))}
         </div>
         
-        {/* Business Testimonials */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-bold text-center mb-8 text-foreground">Trusted by Businesses Everywhere</h3>
-          <div className="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0">
-            {businessTestimonials.map((testimonial, index) => (
-              <Testimonial
-                key={index}
-                company={testimonial.company}
-                companyImage={testimonial.companyImage}
-                name={testimonial.name}
-                avatar={testimonial.avatar}
-                role={testimonial.role}
-                rating={testimonial.rating}
-                text={testimonial.text}
-              />
-            ))}
-          </div>
-        </div>
+
         
         {/* Pricing Section with Swipable Mobile Support */}
         <div className="mb-16">

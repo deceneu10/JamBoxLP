@@ -15,6 +15,8 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    establishmentName: "",
+    establishmentType: "",
     message: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -55,7 +57,7 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
         });
         
         // Reset form
-        setFormData({ name: "", email: "", message: "" });
+        setFormData({ name: "", email: "", establishmentName: "", establishmentType: "", message: "" });
       } else {
         // Show error toast with a random fun message
         toast({
@@ -79,12 +81,17 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
     }
   };
   
+  const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
   return (
     <div className="rounded-2xl overflow-hidden shadow-xl bg-card border border-gray-800 p-8">
-      <h3 className="text-2xl font-bold mb-6 text-foreground">Get in Touch</h3>
+      <h3 className="text-2xl font-bold mb-6 text-foreground">Have a bar, pub or gym? Let the music bring you clients and revenue!</h3>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
-          <Label htmlFor="name" className="block text-foreground font-medium mb-2">Name</Label>
+          <Label htmlFor="name" className="block text-foreground font-medium mb-2">Name of contact</Label>
           <Input 
             type="text" 
             id="name" 
@@ -96,6 +103,40 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
             required
             disabled={isSubmitting}
           />
+        </div>
+        
+        <div className="mb-4">
+          <Label htmlFor="establishmentName" className="block text-foreground font-medium mb-2">Name of establishment</Label>
+          <Input 
+            type="text" 
+            id="establishmentName" 
+            name="establishmentName" 
+            value={formData.establishmentName}
+            onChange={handleChange}
+            className="w-full px-4 py-3 bg-background border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-foreground" 
+            placeholder="Your establishment name"
+            required
+            disabled={isSubmitting}
+          />
+        </div>
+        
+        <div className="mb-4">
+          <Label htmlFor="establishmentType" className="block text-foreground font-medium mb-2">Type of establishment</Label>
+          <select
+            id="establishmentType"
+            name="establishmentType"
+            value={formData.establishmentType}
+            onChange={handleSelectChange}
+            className="w-full px-4 py-3 bg-background border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-foreground"
+            required
+            disabled={isSubmitting}
+          >
+            <option value="">Please select your establishment...</option>
+            <option value="Pub">Pub</option>
+            <option value="Bar">Bar</option>
+            <option value="Gym">Gym</option>
+            <option value="Other">Other</option>
+          </select>
         </div>
         
         <div className="mb-4">

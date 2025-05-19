@@ -15,7 +15,7 @@ export default function About() {
     },
     {
       name: "Marius Baraitaru",
-      role: "Business Developer",
+      role: "Business Development",
       avatar: "/images/team/marius-baraitaru.jpg"
     },
     {

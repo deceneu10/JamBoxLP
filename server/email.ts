@@ -10,6 +10,8 @@ mailService.setApiKey(process.env.SENDGRID_API_KEY);
 interface ContactFormData {
   name: string;
   email: string;
+  establishmentName: string;
+  establishmentType: string;
   message: string;
 }
 
