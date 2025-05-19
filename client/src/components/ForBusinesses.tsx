@@ -4,6 +4,7 @@ import BusinessFeature from "./BusinessFeature";
 import Testimonial from "./Testimonial";
 import PricingCard from "./PricingCard";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useLanguage } from "@/lib/LanguageContext";
 
 export default function ForBusinesses() {
   const pricingRef = useRef<HTMLDivElement>(null);

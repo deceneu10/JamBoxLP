@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import FeatureCard from "./FeatureCard";
 import Testimonial from "./Testimonial";
+import { useLanguage } from "@/lib/LanguageContext";
 
 export default function ForUsers() {
+  const { t } = useLanguage();
   const testimonials = [
     {
       name: "Sarah K.",
@@ -28,9 +30,9 @@ export default function ForUsers() {
     <section id="for-users" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Be the DJ</h2>
+          <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">{t("users.title")}</h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Take control of the music at your favorite venues. Vote for songs, earn rewards, and discover new places to enjoy music with friends.
+            {t("users.subtitle")}
           </p>
         </div>
         
@@ -38,22 +40,22 @@ export default function ForUsers() {
           {/* Feature Card 1 */}
           <FeatureCard 
             icon={<i className="fas fa-vote-yea text-2xl"></i>}
-            title="Vote & Fast Track Favorites"
-            description="Vote on upcoming songs and use your credits to push your favorites to the top of the playlist."
+            title={t("users.feature1.title")}
+            description={t("users.feature1.description")}
             color="primary"
           />
           
           {/* Feature Card 2 */}
           <FeatureCard 
             icon={<i className="fas fa-coins text-2xl"></i>}
-            title="Earn Credits for Interactions"
-            description="Get rewarded for being active. Earn credits by checking in, voting, and sharing your experience."
+            title={t("users.feature2.title")}
+            description={t("users.feature2.description")}
             color="secondary"
           />
           
           {/* Map Section */}
           <div className="flex flex-col items-center">
-            <h3 className="text-xl font-bold mb-4 text-center text-foreground">Discover Nearby Venues</h3>
+            <h3 className="text-xl font-bold mb-4 text-center text-foreground">{t("users.feature3.title")}</h3>
             <div className="rounded-lg overflow-hidden shadow-lg border border-accent w-full">
               <div className="relative h-64 bg-gray-900">
                 <iframe
@@ -70,9 +72,9 @@ export default function ForUsers() {
         </div>
         
         <div className="text-center">
-          <a href="https://tally.so/r/waox6W" target="_blank" rel="noopener noreferrer">
+          <a href="#contact-section">
             <Button className="bg-primary hover:bg-primary/90 text-white px-10 py-4 rounded-full font-bold text-lg transform hover:scale-105 transition">
-              Sign Up Now
+              {t("navbar.contact")}
             </Button>
           </a>
         </div>

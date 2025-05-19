@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/lib/LanguageContext";
 
 export default function Hero() {
+  const { t } = useLanguage();
   return (
     <section id="hero" className="pt-24 pb-2 md:pt-32 md:pb-24 bg-background text-white relative">
       <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-secondary/20 to-accent/20"></div>
@@ -8,20 +10,20 @@ export default function Hero() {
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="md:w-1/2 mb-12 md:mb-0">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">
-              The Ultimate Multiplayer Mode for Music
+              {t("hero.title")}
             </h1>
             <p className="text-xl mb-8 text-white">
-              Transform how people experience music at venues. Create interactive experiences where everyone gets a say in what plays next.
+              {t("hero.subtitle")}
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-4">
               <a href="#for-users">
                 <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-full font-bold text-center w-full sm:w-auto">
-                  For Users
+                  {t("hero.forUsers")}
                 </Button>
               </a>
               <a href="#for-businesses">
                 <Button className="bg-secondary hover:bg-secondary/90 text-white px-8 py-3 rounded-full font-bold text-center w-full sm:w-auto">
-                  For Businesses
+                  {t("hero.forBusinesses")}
                 </Button>
               </a>
             </div>
@@ -61,15 +63,15 @@ export default function Hero() {
               
               <div className="absolute bottom-0 left-0 right-0 p-4">
                 <div className="mb-4">
-                  <h3 className="text-xl font-bold text-white mb-4">Welcome, JamBox-2</h3>
+                  <h3 className="text-xl font-bold text-white mb-4">Bine ai venit, JamBox-2</h3>
                   <div className="bg-card p-4 rounded-xl mb-4">
-                    <h4 className="text-lg font-bold mb-2">Now Playing</h4>
+                    <h4 className="text-lg font-bold mb-2">Acum se cântă</h4>
                     <div className="flex items-center space-x-3 mb-2">
                       <div className="w-12 h-12 bg-gray-700 flex-shrink-0"></div>
                       <div>
                         <p className="font-bold">Till I Collapse</p>
                         <p className="text-sm text-gray-400">Eminem</p>
-                        <p className="text-sm text-secondary">Selected by: JamBox-1</p>
+                        <p className="text-sm text-secondary">Selectat de: JamBox-1</p>
                       </div>
                     </div>
                     <div className="w-full h-1 bg-gray-700 rounded-full overflow-hidden">
@@ -81,7 +83,7 @@ export default function Hero() {
                     </div>
                   </div>
                   <button className="w-full bg-green-500 text-white py-3 rounded-lg font-bold mb-4">
-                    Ready to select
+                    Gata de selectare
                   </button>
                 </div>
               </div>
