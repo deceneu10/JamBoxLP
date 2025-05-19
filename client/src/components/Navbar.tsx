@@ -47,18 +47,22 @@ export default function Navbar() {
         <div className="hidden md:flex space-x-8">
           {navLinks.map((link) => (
             <a 
-              key={link.title} 
+              key={link.key} 
               href={link.href} 
               className="font-medium text-foreground hover:text-primary transition"
             >
-              {link.title}
+              {t(link.key)}
             </a>
           ))}
         </div>
 
-        <div className="hidden md:block">
-          <a href="https://tally.so/r/waox6W" target="_blank" rel="noopener noreferrer">
-            <Button className="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-full">Sign Up</Button>
+        <div className="hidden md:flex items-center space-x-4">
+          <LanguageSelector />
+          
+          <a href="#contact-section">
+            <Button className="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-full">
+              {t("navbar.contact")}
+            </Button>
           </a>
         </div>
       </div>
