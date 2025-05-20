@@ -1,19 +1,19 @@
 // Fun success messages for the contact form
 export const successMessages = [
-  "🎉 Great! You're now on the path to the Music Hall of Fame!",
-  "🕺 Your message hit all the right notes. We'll be dancing to it shortly!",
-  "🎧 Mic check complete. Our team's tuning in to your vibes now!",
-  "🥁 Boom! That message just dropped like a killer bassline.",
-  "🎤 You've made contact with the Jam gods. Expect a righteous reply soon."
+  "🎉 Excelent! Ești pe drumul spre Music Hall of Fame!",
+  "🕺 Mesajul tău a nimerit toate notele potrivite. Vom dansa pe el în curând!",
+  "🎧 Verificare microfon completă. Echipa noastră se acordează la vibrațiile tale acum!",
+  "🥁 Boom! Mesajul tău tocmai a căzut ca o linie de bass grozavă.",
+  "🎤 Ai luat legătura cu zeii Jam. Așteaptă un răspuns curând."
 ];
 
 // Fun error messages for the contact form
 export const errorMessages = [
-  "🎤 Uh-oh... someone dropped the mic. Try again in a sec!",
-  "🔌 Oops! Looks like the DJ unplugged the system. Give it another spin.",
-  "🐛 That was a bum note. Something glitched – please retry!",
-  "📡 Signal's fuzzy. Our vinyl's skipping. Try one more time?",
-  "⚡ Oops, we hit a sour chord. Can you resend that jam?"
+  "🎤 Ups... cineva a scăpat microfonul. Încearcă din nou!",
+  "🔌 Oops! Se pare că DJ-ul a deconectat sistemul. Mai încearcă o dată.",
+  "🐛 A fost o notă falsă. Ceva s-a defectat – te rugăm să încerci din nou!",
+  "📡 Semnalul e neclar. Vinilul nostru sare. Mai încerci o dată?",
+  "⚡ Ups, am lovit un acord fals. Poți retrimite?"
 ];
 
 // Get a random message from the array

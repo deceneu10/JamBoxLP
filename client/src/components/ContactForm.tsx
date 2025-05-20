@@ -52,7 +52,7 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
       if (data.success) {
         // Show success toast with a random fun message
         toast({
-          title: "Message Sent!",
+          title: "Mesaj Trimis!",
           description: getRandomMessage(successMessages),
           variant: "default",
           duration: 5000,
@@ -63,7 +63,7 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
       } else {
         // Show error toast with a random fun message
         toast({
-          title: "Message Failed",
+          title: "Eroare la trimitere",
           description: getRandomMessage(errorMessages),
           variant: "destructive",
           duration: 5000,
@@ -73,7 +73,7 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
       console.error("Error sending message:", error);
       // Show error toast with a random fun message
       toast({
-        title: "Message Failed",
+        title: "Eroare la trimitere",
         description: getRandomMessage(errorMessages),
         variant: "destructive",
         duration: 5000,

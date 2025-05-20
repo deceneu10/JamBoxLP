@@ -270,8 +270,8 @@ export const translations: Translations = {
     ro: "Contactează-ne"
   },
   "footer.contact.address": {
-    en: "Bulevardul Doina Cornea 4E, 1st floor, Cluj-Napoca, Romania",
-    ro: "Bulevardul Doina Cornea 4E, etaj 1, Cluj-Napoca, România"
+    en: "Bulevardul Doina Cornea 4E, 1st floor, Bucharest, Romania",
+    ro: "Bulevardul Doina Cornea 4E, etaj 1, București, România"
   },
   "footer.contact.email": {
     en: "Email: jambox.vibe@gmail.com",
