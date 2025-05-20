@@ -1,4 +1,5 @@
 import ContactForm from "./ContactForm";
+import { useLanguage } from "@/lib/LanguageContext";
 
 interface TeamMember {
   name: string;
@@ -7,6 +8,7 @@ interface TeamMember {
 }
 
 export default function About() {
+  const { t } = useLanguage();
   const teamMembers: TeamMember[] = [
     {
       name: "Angel Ionut Cerchia",
@@ -35,22 +37,22 @@ export default function About() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row gap-12">
           <div className="lg:w-1/2">
-            <h2 className="text-4xl font-bold mb-6 text-foreground bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">About JamBox</h2>
+            <h2 className="text-4xl font-bold mb-6 text-foreground bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">Despre JamBox</h2>
             <div className="rounded-2xl overflow-hidden shadow-xl bg-card border border-gray-800 p-8 mb-8">
               <p className="text-gray-300 mb-4">
-                JamBox was born from a simple frustration: why can't customers have more say in the music played at their favorite venues?
+                JamBox s-a născut dintr-o frustrare simplă: de ce clienții nu pot avea mai mult de spus în muzica redată în localurile lor preferate?
               </p>
               <p className="text-gray-300 mb-4">
-                Founded in 2022 by a team of music lovers and tech enthusiasts, we set out to create a platform that bridges the gap between venues and their customers through interactive music experiences.
+                Fondată în 2022 de o echipă de iubitori de muzică și entuziaști tech, am pornit să creăm o platformă care conectează localurile și clienții lor prin experiențe muzicale interactive.
               </p>
               <p className="text-gray-300 mb-4">
-                Today, JamBox is helping hundreds of venues increase engagement, customer satisfaction, and revenue through the power of collaborative music selection.
+                Astăzi, JamBox ajută sute de localuri să crească implicarea, satisfacția clienților și veniturile prin puterea selecției muzicale colaborative.
               </p>
             </div>
             
             {/* Team Section */}
             <div className="rounded-2xl overflow-hidden shadow-xl bg-card border border-gray-800 p-8">
-              <h3 className="text-2xl font-bold mb-6 text-foreground">Our Team</h3>
+              <h3 className="text-2xl font-bold mb-6 text-foreground">Echipa noastră</h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 {teamMembers.map((member, index) => (
                   <div key={index} className="text-center bg-background rounded-xl p-4 shadow-md">

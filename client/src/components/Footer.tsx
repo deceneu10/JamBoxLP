@@ -1,4 +1,7 @@
+import { useLanguage } from "@/lib/LanguageContext";
+
 export default function Footer() {
+  const { t } = useLanguage();
   return (
     <footer className="bg-background text-white py-12 border-t border-gray-800">
       <div className="container mx-auto px-4">
@@ -16,7 +19,7 @@ export default function Footer() {
               <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">JamBox</h3>
             </div>
             <p className="text-gray-300 mb-4">
-              Transforming the way people experience music at venues around the world.
+              Transformăm modul în care oamenii experimentează muzica în localuri din întreaga lume.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-primary hover:text-primary/80 transition">

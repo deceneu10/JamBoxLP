@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { getRandomMessage, successMessages, errorMessages } from "@/lib/contactMessages";
+import { useLanguage } from "@/lib/LanguageContext";
 
 interface ContactFormProps {
   onSubmit?: (formData: { name: string; email: string; message: string }) => void;
@@ -12,6 +13,7 @@ interface ContactFormProps {
 
 export default function ContactForm({ onSubmit }: ContactFormProps) {
   const { toast } = useToast();
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -88,10 +90,10 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
 
   return (
     <div className="rounded-2xl overflow-hidden shadow-xl bg-card border border-gray-800 p-8">
-      <h3 className="text-2xl font-bold mb-6 text-foreground">Have a bar, pub or gym? Let the music bring you clients and revenue!</h3>
+      <h3 className="text-2xl font-bold mb-6 text-foreground">{t("contact.title")}</h3>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
-          <Label htmlFor="name" className="block text-foreground font-medium mb-2">Name of contact</Label>
+          <Label htmlFor="name" className="block text-foreground font-medium mb-2">{t("contact.name.label")}</Label>
           <Input 
             type="text" 
             id="name" 
@@ -99,14 +101,14 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
             value={formData.name}
             onChange={handleChange}
             className="w-full px-4 py-3 bg-background border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-foreground" 
-            placeholder="Your name"
+            placeholder={t("contact.name.placeholder")}
             required
             disabled={isSubmitting}
           />
         </div>
         
         <div className="mb-4">
-          <Label htmlFor="establishmentName" className="block text-foreground font-medium mb-2">Name of establishment</Label>
+          <Label htmlFor="establishmentName" className="block text-foreground font-medium mb-2">{t("contact.establishmentName.label")}</Label>
           <Input 
             type="text" 
             id="establishmentName" 
@@ -114,14 +116,14 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
             value={formData.establishmentName}
             onChange={handleChange}
             className="w-full px-4 py-3 bg-background border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-foreground" 
-            placeholder="Your establishment name"
+            placeholder={t("contact.establishmentName.placeholder")}
             required
             disabled={isSubmitting}
           />
         </div>
         
         <div className="mb-4">
-          <Label htmlFor="establishmentType" className="block text-foreground font-medium mb-2">Type of establishment</Label>
+          <Label htmlFor="establishmentType" className="block text-foreground font-medium mb-2">{t("contact.establishmentType.label")}</Label>
           <select
             id="establishmentType"
             name="establishmentType"
@@ -131,16 +133,16 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
             required
             disabled={isSubmitting}
           >
-            <option value="">Please select your establishment...</option>
-            <option value="Pub">Pub</option>
-            <option value="Bar">Bar</option>
-            <option value="Gym">Gym</option>
-            <option value="Other">Other</option>
+            <option value="">{t("contact.establishmentType.placeholder")}</option>
+            <option value="Pub">{t("contact.establishmentType.pub")}</option>
+            <option value="Bar">{t("contact.establishmentType.bar")}</option>
+            <option value="Gym">{t("contact.establishmentType.gym")}</option>
+            <option value="Other">{t("contact.establishmentType.other")}</option>
           </select>
         </div>
         
         <div className="mb-4">
-          <Label htmlFor="email" className="block text-foreground font-medium mb-2">Email</Label>
+          <Label htmlFor="email" className="block text-foreground font-medium mb-2">{t("contact.email.label")}</Label>
           <Input 
             type="email" 
             id="email" 
@@ -148,14 +150,14 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
             value={formData.email}
             onChange={handleChange}
             className="w-full px-4 py-3 bg-background border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-foreground" 
-            placeholder="Your email"
+            placeholder={t("contact.email.placeholder")}
             required
             disabled={isSubmitting}
           />
         </div>
         
         <div className="mb-6">
-          <Label htmlFor="message" className="block text-foreground font-medium mb-2">Message</Label>
+          <Label htmlFor="message" className="block text-foreground font-medium mb-2">{t("contact.message.label")}</Label>
           <Textarea 
             id="message" 
             name="message" 
@@ -163,7 +165,7 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
             value={formData.message}
             onChange={handleChange}
             className="w-full px-4 py-3 bg-background border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-foreground" 
-            placeholder="Your message"
+            placeholder={t("contact.message.placeholder")}
             required
             disabled={isSubmitting}
           />
@@ -174,7 +176,7 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
           className="w-full bg-accent hover:bg-accent/90 text-white py-3 rounded-lg font-medium"
           disabled={isSubmitting}
         >
-          {isSubmitting ? "Sending..." : "Send Message"}
+          {isSubmitting ? t("contact.button.sending") : t("contact.button.send")}
         </Button>
       </form>
     </div>
