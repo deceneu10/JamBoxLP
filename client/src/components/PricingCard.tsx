@@ -27,7 +27,7 @@ export default function PricingCard({
   highlighted = false,
   borderColor = "border-primary",
 }: PricingCardProps) {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   return (
     <div className={`bg-card p-8 rounded-xl shadow-lg border-t-4 ${borderColor} ${highlighted ? 'relative transform lg:scale-105' : ''}`}>
       {highlighted && (
@@ -41,7 +41,7 @@ export default function PricingCard({
       
       <div className="mb-6">
         <span className="text-4xl font-bold text-foreground">{price.replace('$', '€')}</span>
-        <span className="text-gray-400">{t("pricing.perMonth")}</span>
+        <span className="text-gray-400">{language === 'en' ? '/month' : '/lună'}</span>
       </div>
       
       <ul className="mb-8 space-y-3">
