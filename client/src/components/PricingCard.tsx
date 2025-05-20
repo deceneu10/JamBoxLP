@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/lib/LanguageContext";
 
 interface PricingFeature {
   text: string;
@@ -26,6 +27,7 @@ export default function PricingCard({
   highlighted = false,
   borderColor = "border-primary",
 }: PricingCardProps) {
+  const { t } = useLanguage();
   return (
     <div className={`bg-card p-8 rounded-xl shadow-lg border-t-4 ${borderColor} ${highlighted ? 'relative transform lg:scale-105' : ''}`}>
       {highlighted && (
@@ -39,7 +41,7 @@ export default function PricingCard({
       
       <div className="mb-6">
         <span className="text-4xl font-bold text-foreground">{price.replace('$', '€')}</span>
-        <span className="text-gray-400">/month</span>
+        <span className="text-gray-400">{t("pricing.perMonth")}</span>
       </div>
       
       <ul className="mb-8 space-y-3">

@@ -183,6 +183,10 @@ export const translations: Translations = {
     en: "Custom branding",
     ro: "Branding personalizat"
   },
+  "pricing.perMonth": {
+    en: "/month",
+    ro: "/lună"
+  },
   
   // About section
   "about.teamTitle": {

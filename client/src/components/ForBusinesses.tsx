@@ -264,7 +264,7 @@ export default function ForBusinesses() {
         <div className="text-center">
           <a href="#contact-section">
             <Button className="bg-accent hover:bg-accent/90 text-white px-10 py-4 rounded-full font-bold text-lg transform hover:scale-105 transition">
-              Înscrie Locația Ta
+              {t("business.signup")}
             </Button>
           </a>
         </div>
