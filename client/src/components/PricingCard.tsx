@@ -38,7 +38,7 @@ export default function PricingCard({
       <p className="text-gray-400 mb-6">{description}</p>
       
       <div className="mb-6">
-        <span className="text-4xl font-bold text-foreground">{price}</span>
+        <span className="text-4xl font-bold text-foreground">{price.replace('$', '€')}</span>
         <span className="text-gray-400">/month</span>
       </div>
       

@@ -321,6 +321,10 @@ export const translations: Translations = {
     en: "© 2023 JamBox. All rights reserved.",
     ro: "© 2023 JamBox. Toate drepturile rezervate."
   },
+  "footer.description": {
+    en: "Transforming how people experience music in venues around the world.",
+    ro: "Transformăm modul în care oamenii experimentează muzica în localuri din întreaga lume."
+  },
   "footer.privacy": {
     en: "Privacy Policy",
     ro: "Politica de Confidențialitate"

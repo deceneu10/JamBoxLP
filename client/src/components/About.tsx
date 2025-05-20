@@ -52,7 +52,7 @@ export default function About() {
             
             {/* Team Section */}
             <div className="rounded-2xl overflow-hidden shadow-xl bg-card border border-gray-800 p-8">
-              <h3 className="text-2xl font-bold mb-6 text-foreground">Echipa noastră</h3>
+              <h3 className="text-2xl font-bold mb-6 text-foreground">{t("about.team")}</h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 {teamMembers.map((member, index) => (
                   <div key={index} className="text-center bg-background rounded-xl p-4 shadow-md">
