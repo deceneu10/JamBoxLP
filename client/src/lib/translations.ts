@@ -185,13 +185,25 @@ export const translations: Translations = {
   },
   
   // About section
-  "about.title": {
+  "about.teamTitle": {
     en: "Meet the Team",
     ro: "Cunoaște Echipa"
   },
   "about.subtitle": {
     en: "The people behind JamBox",
     ro: "Oamenii din spatele JamBox"
+  },
+  "about.description.p1": {
+    en: "JamBox was born from a simple frustration: why can't customers have more say in the music played at their favorite venues?",
+    ro: "JamBox s-a născut dintr-o frustrare simplă: de ce clienții nu pot avea mai mult de spus în muzica redată în localurile lor preferate?"
+  },
+  "about.description.p2": {
+    en: "Founded in 2022 by a team of music lovers and tech enthusiasts, we set out to create a platform that connects venues and their customers through interactive music experiences.",
+    ro: "Fondată în 2022 de o echipă de iubitori de muzică și entuziaști tech, am pornit să creăm o platformă care conectează localurile și clienții lor prin experiențe muzicale interactive."
+  },
+  "about.description.p3": {
+    en: "Today, JamBox helps hundreds of venues increase engagement, customer satisfaction, and revenue through the power of collaborative music selection.",
+    ro: "Astăzi, JamBox ajută sute de localuri să crească implicarea, satisfacția clienților și veniturile prin puterea selecției muzicale colaborative."
   },
   
   // Contact form
@@ -321,7 +333,7 @@ export const translations: Translations = {
     en: "Cookie Policy",
     ro: "Politica de Cookies"
   },
-  "about.title": {
+  "about.heading": {
     en: "About JamBox",
     ro: "Despre JamBox"
   },

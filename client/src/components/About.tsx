@@ -37,16 +37,16 @@ export default function About() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row gap-12">
           <div className="lg:w-1/2">
-            <h2 className="text-4xl font-bold mb-6 text-foreground bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">Despre JamBox</h2>
+            <h2 className="text-4xl font-bold mb-6 text-foreground bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">{t("about.heading")}</h2>
             <div className="rounded-2xl overflow-hidden shadow-xl bg-card border border-gray-800 p-8 mb-8">
               <p className="text-gray-300 mb-4">
-                JamBox s-a născut dintr-o frustrare simplă: de ce clienții nu pot avea mai mult de spus în muzica redată în localurile lor preferate?
+                {t("about.description.p1")}
               </p>
               <p className="text-gray-300 mb-4">
-                Fondată în 2022 de o echipă de iubitori de muzică și entuziaști tech, am pornit să creăm o platformă care conectează localurile și clienții lor prin experiențe muzicale interactive.
+                {t("about.description.p2")}
               </p>
               <p className="text-gray-300 mb-4">
-                Astăzi, JamBox ajută sute de localuri să crească implicarea, satisfacția clienților și veniturile prin puterea selecției muzicale colaborative.
+                {t("about.description.p3")}
               </p>
             </div>
             
