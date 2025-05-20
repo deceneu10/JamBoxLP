@@ -128,7 +128,7 @@ export const translations: Translations = {
     ro: "Perfect pentru localuri mici"
   },
   "pricing.free.price": {
-    en: "$0",
+    en: "0 €",
     ro: "0 €"
   },
   "pricing.free.button": {
@@ -156,7 +156,7 @@ export const translations: Translations = {
     ro: "Pentru localuri în creștere"
   },
   "pricing.pro.price": {
-    en: "$29",
+    en: "29 €",
     ro: "29 €"
   },
   "pricing.pro.button": {
@@ -308,6 +308,30 @@ export const translations: Translations = {
   "footer.copyright": {
     en: "© 2023 JamBox. All rights reserved.",
     ro: "© 2023 JamBox. Toate drepturile rezervate."
+  },
+  "footer.privacy": {
+    en: "Privacy Policy",
+    ro: "Politica de Confidențialitate"
+  },
+  "footer.terms": {
+    en: "Terms of Service",
+    ro: "Termeni și Condiții"
+  },
+  "footer.cookies": {
+    en: "Cookie Policy",
+    ro: "Politica de Cookies"
+  },
+  "about.title": {
+    en: "About JamBox",
+    ro: "Despre JamBox"
+  },
+  "about.team": {
+    en: "Our Team",
+    ro: "Echipa noastră"
+  },
+  "business.signup": {
+    en: "Sign Up as a Venue",
+    ro: "Înscrie Locația Ta"
   }
 };
 
