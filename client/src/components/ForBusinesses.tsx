@@ -262,9 +262,9 @@ export default function ForBusinesses() {
         </div>
         
         <div className="text-center">
-          <a href="https://tally.so/r/waox6W" target="_blank" rel="noopener noreferrer">
+          <a href="#contact-section">
             <Button className="bg-accent hover:bg-accent/90 text-white px-10 py-4 rounded-full font-bold text-lg transform hover:scale-105 transition">
-              Sign Up as a Venue
+              Înscrie Locația Ta
             </Button>
           </a>
         </div>

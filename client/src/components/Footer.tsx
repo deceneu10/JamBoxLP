@@ -38,41 +38,41 @@ export default function Footer() {
           </div>
           
           <div className="md:w-1/3 mb-8 md:mb-0">
-            <h4 className="text-lg font-bold mb-4 text-foreground">Quick Links</h4>
+            <h4 className="text-lg font-bold mb-4 text-foreground">{t("footer.links.title")}</h4>
             <ul className="space-y-2">
-              <li><a href="#hero" className="text-gray-300 hover:text-secondary transition">Home</a></li>
-              <li><a href="#for-users" className="text-gray-300 hover:text-primary transition">For Users</a></li>
-              <li><a href="#for-businesses" className="text-gray-300 hover:text-accent transition">For Businesses</a></li>
-              <li><a href="#about" className="text-gray-300 hover:text-secondary transition">About Us</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-primary transition">Blog</a></li>
+              <li><a href="#hero" className="text-gray-300 hover:text-secondary transition">{t("footer.links.home")}</a></li>
+              <li><a href="#for-users" className="text-gray-300 hover:text-primary transition">{t("footer.links.users")}</a></li>
+              <li><a href="#for-businesses" className="text-gray-300 hover:text-accent transition">{t("footer.links.businesses")}</a></li>
+              <li><a href="#about" className="text-gray-300 hover:text-secondary transition">{t("footer.links.about")}</a></li>
+              <li><a href="#contact-section" className="text-gray-300 hover:text-primary transition">{t("footer.links.contact")}</a></li>
             </ul>
           </div>
           
           <div className="md:w-1/3">
-            <h4 className="text-lg font-bold mb-4 text-foreground">Contact</h4>
+            <h4 className="text-lg font-bold mb-4 text-foreground">{t("footer.contact.title")}</h4>
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
                 <i className="fas fa-map-marker-alt mt-1 text-accent"></i>
-                <span className="text-gray-300">Bulevardul Doina Cornea 4E, 1st floor</span>
+                <span className="text-gray-300">{t("footer.contact.address")}</span>
               </li>
               <li className="flex items-center space-x-3">
                 <i className="fas fa-envelope text-primary"></i>
-                <a href="mailto:jambox.vibe@gmail.com" className="text-gray-300 hover:text-primary transition">jambox.vibe@gmail.com</a>
+                <a href="mailto:jambox.vibe@gmail.com" className="text-gray-300 hover:text-primary transition">{t("footer.contact.email")}</a>
               </li>
               <li className="flex items-center space-x-3">
                 <i className="fas fa-phone text-secondary"></i>
-                <a href="tel:+40727934162" className="text-gray-300 hover:text-secondary transition">+40 727 934 162</a>
+                <a href="tel:+40727934162" className="text-gray-300 hover:text-secondary transition">{t("footer.contact.phone")}</a>
               </li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-gray-800 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 mb-4 md:mb-0">&copy; {new Date().getFullYear()} JamBox. All rights reserved.</p>
+          <p className="text-gray-400 mb-4 md:mb-0">&copy; {new Date().getFullYear()} JamBox. {t("footer.copyright")}</p>
           <div className="flex space-x-6">
-            <a href="#" className="text-gray-400 hover:text-primary transition">Privacy Policy</a>
-            <a href="#" className="text-gray-400 hover:text-secondary transition">Terms of Service</a>
-            <a href="#" className="text-gray-400 hover:text-accent transition">Cookie Policy</a>
+            <a href="#" className="text-gray-400 hover:text-primary transition">Politica de Confidențialitate</a>
+            <a href="#" className="text-gray-400 hover:text-secondary transition">Termeni și Condiții</a>
+            <a href="#" className="text-gray-400 hover:text-accent transition">Politica de Cookies</a>
           </div>
         </div>
       </div>
