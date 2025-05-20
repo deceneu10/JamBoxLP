@@ -59,7 +59,13 @@ export default function Navbar() {
         <div className="hidden md:flex items-center space-x-4">
           <LanguageSelector />
           
-          <a href="#contact-section">
+          <a 
+            href="#contact-section"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('contact-section')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
             <Button className="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-full">
               {t("navbar.contact")}
             </Button>

@@ -262,7 +262,13 @@ export default function ForBusinesses() {
         </div>
         
         <div className="text-center">
-          <a href="#contact-section">
+          <a 
+            href="#contact-section"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('contact-section')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
             <Button className="bg-accent hover:bg-accent/90 text-white px-10 py-4 rounded-full font-bold text-lg transform hover:scale-105 transition">
               {t("business.signup")}
             </Button>

@@ -53,7 +53,14 @@ export default function PricingCard({
         ))}
       </ul>
       
-      <a href="#contact-section" className="w-full">
+      <a 
+        href="#contact-section" 
+        className="w-full"
+        onClick={(e) => {
+          e.preventDefault();
+          document.getElementById('contact-section')?.scrollIntoView({ behavior: 'smooth' });
+        }}
+      >
         <Button 
           variant={buttonVariant === "outline" ? "outline" : "default"}
           className={
