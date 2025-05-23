@@ -13,14 +13,21 @@ export default function Home() {
       <Hero />
       <ForUsers />
       <ForBusinesses />
-      <About />
       
-      {/* Contact Section */}
-      <section id="contact-section" className="py-20 bg-background border-t border-gray-800">
-        <div className="container mx-auto px-4">
-          <ContactForm />
+      {/* Mobile: Contact Form appears before About */}
+      <div className="flex flex-col">
+        {/* Contact Section */}
+        <section id="contact-section" className="py-20 bg-background border-t border-gray-800 order-2 md:order-1">
+          <div className="container mx-auto px-4">
+            <ContactForm />
+          </div>
+        </section>
+        
+        {/* About Section */}
+        <div className="order-1 md:order-2">
+          <About />
         </div>
-      </section>
+      </div>
       
       <Footer />
     </div>
