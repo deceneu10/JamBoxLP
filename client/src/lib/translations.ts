@@ -198,16 +198,16 @@ export const translations: Translations = {
     ro: "Oamenii din spatele JamBox"
   },
   "about.description.p1": {
-    en: "JamBox was born from a simple frustration: why can't customers have more say in the music played at their favorite venues?",
-    ro: "JamBox s-a născut dintr-o frustrare simplă: de ce clienții nu pot avea mai mult de spus în muzica redată în localurile lor preferate?"
+    en: "We believe music shouldn't just play in the background — it should bring people together.",
+    ro: "Credem că muzica nu ar trebui să fie doar un fundal — ci un mod de a apropia oamenii."
   },
   "about.description.p2": {
-    en: "Founded in 2022 by a team of music lovers and tech enthusiasts, we set out to create a platform that connects venues and their customers through interactive music experiences.",
-    ro: "Fondată în 2022 de o echipă de iubitori de muzică și entuziaști tech, am pornit să creăm o platformă care conectează localurile și clienții lor prin experiențe muzicale interactive."
+    en: "JamBox was created in 2025 by a team that loves both beats and bytes. Our goal? To let every guest feel heard by giving them a voice in the music playing around them.",
+    ro: "JamBox a fost creat în 2025 de o echipă pasionată de muzică și tehnologie. Scopul nostru? Să le oferim clienților o voce în muzica care se aude în jurul lor."
   },
   "about.description.p3": {
-    en: "Today, JamBox helps hundreds of venues increase engagement, customer satisfaction, and revenue through the power of collaborative music selection.",
-    ro: "Astăzi, JamBox ajută sute de localuri să crească implicarea, satisfacția clienților și veniturile prin puterea selecției muzicale colaborative."
+    en: "Now, JamBox helps venues create unforgettable atmospheres — with playlists chosen by the people, for the people.",
+    ro: "Astăzi, JamBox ajută localurile să creeze atmosfere de neuitat — cu playlisturi alese de oameni, pentru oameni."
   },
   
   // Contact form
