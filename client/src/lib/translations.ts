@@ -30,16 +30,16 @@ export const translations: Translations = {
   
   // Hero section
   "hero.title": {
-    en: "The Ultimate Multiplayer Mode for Music",
-    ro: "Modul Multiplayer Suprem pentru Muzică"
+    en: "Your Night. Your Music. Their Memories.",
+    ro: "Noaptea ta. Muzica ta. Amintirile lor."
   },
   "hero.subtitle": {
-    en: "Transform how people experience music at venues. Create interactive experiences where everyone gets a say in what plays next.",
-    ro: "Transformă modul în care oamenii experimentează muzica în localuri. Creează experiențe interactive în care toată lumea are un cuvânt de spus în ceea ce se cântă în continuare."
+    en: "JamBox turns passive playlists into living memories. Let your clients choose the songs that mean something — and watch the vibe turn into something they'll remember.",
+    ro: "JamBox transformă playlisturile pasive în amintiri vii. Lasă-ți clienții să aleagă melodiile care contează pentru ei — și vei vedea cum atmosfera devine de neuitat."
   },
   "hero.forUsers": {
     en: "For Users",
-    ro: "Pentru Utilizatori"
+    ro: "Pentru Clienți"
   },
   "hero.forBusinesses": {
     en: "For Businesses",
