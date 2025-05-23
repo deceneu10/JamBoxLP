@@ -43,7 +43,7 @@ export const translations: Translations = {
   },
   "hero.forBusinesses": {
     en: "For Businesses",
-    ro: "Pentru Afaceri"
+    ro: "Pentru Localuri"
   },
   
   // For Users section
