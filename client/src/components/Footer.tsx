@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="md:w-1/3 mb-8 md:mb-0">
             <div className="flex items-center mb-4">
               <div className="w-8 h-8 flex items-center justify-center mr-2">
-                <img src="/attached_assets/Logo_site-min.png" alt="JamBox Logo" className="w-8 h-8 object-contain" />
+                <img src="/logo.png" alt="JamBox Logo" className="w-8 h-8 object-contain" />
               </div>
               <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">JamBox</h3>
             </div>

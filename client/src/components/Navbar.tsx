@@ -35,7 +35,7 @@ export default function Navbar() {
         <Link href="/">
           <div className="flex items-center space-x-3">
             <div className="w-10 h-10 flex items-center justify-center">
-              <img src="/attached_assets/Logo_site-min.png" alt="JamBox Logo" className="w-10 h-10 object-contain" />
+              <img src="/logo.png" alt="JamBox Logo" className="w-10 h-10 object-contain" />
             </div>
             <span className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">JamBox</span>
           </div>
