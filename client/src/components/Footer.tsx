@@ -8,13 +8,8 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between">
           <div className="md:w-1/3 mb-8 md:mb-0">
             <div className="flex items-center mb-4">
-              <div className="w-8 h-8 rounded-full overflow-hidden bg-background flex items-center justify-center mr-2">
-                <svg width="32" height="32" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="512" height="512" fill="#10101E" />
-                  <path d="M256 105C207.4 105 168 144.4 168 193V319C168 367.6 207.4 407 256 407C304.6 407 344 367.6 344 319V193C344 144.4 304.6 105 256 105Z" stroke="#FF00FF" strokeWidth="12"/>
-                  <path d="M256 147C230.6 147 210 167.6 210 193V319C210 344.4 230.6 365 256 365C281.4 365 302 344.4 302 319V193C302 167.6 281.4 147 256 147Z" stroke="#00FFFF" strokeWidth="12"/>
-                  <path d="M256 256L226 226M256 256L286 226" stroke="#FFA500" strokeWidth="12"/>
-                </svg>
+              <div className="w-8 h-8 flex items-center justify-center mr-2">
+                <img src="/attached_assets/Logo_site-min.png" alt="JamBox Logo" className="w-8 h-8 object-contain" />
               </div>
               <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">JamBox</h3>
             </div>
