@@ -13,7 +13,7 @@ export const translations: Translations = {
   },
   "navbar.businesses": {
     en: "For Businesses",
-    ro: "Pentru Afaceri"
+    ro: "Pentru Localuri"
   },
   "navbar.pricing": {
     en: "Pricing",
@@ -83,7 +83,7 @@ export const translations: Translations = {
   // For Businesses section
   "business.title": {
     en: "For Venues & Businesses",
-    ro: "Pentru Localuri și Afaceri"
+    ro: "Pentru Localuri"
   },
   "business.subtitle": {
     en: "Boost engagement and keep customers coming back",
@@ -311,7 +311,7 @@ export const translations: Translations = {
   },
   "footer.links.businesses": {
     en: "For Businesses",
-    ro: "Pentru Afaceri"
+    ro: "Pentru Localuri"
   },
   "footer.links.about": {
     en: "About Us",
