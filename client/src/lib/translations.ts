@@ -9,7 +9,7 @@ export const translations: Translations = {
   // Navbar
   "navbar.users": {
     en: "For Users",
-    ro: "Pentru Utilizatori"
+    ro: "Pentru Clienți"
   },
   "navbar.businesses": {
     en: "For Businesses",
@@ -56,28 +56,28 @@ export const translations: Translations = {
     ro: "Muzica ta, alegerea ta, în localurile tale favorite"
   },
   "users.feature1.title": {
-    en: "Influence What Plays",
-    ro: "Influențează ce se cântă"
+    en: "Influence What is Playing",
+    ro: "Tu alegi melodia potrivita"
   },
   "users.feature1.description": {
-    en: "Vote for your favorite songs and help determine what plays next at venues.",
-    ro: "Votează pentru melodiile tale preferate și ajută la determinarea a ceea ce se va cânta în continuare în localuri."
+    en: "Vote for the songs you love and help guide the vibe wherever you are — no more silent wishes.",
+    ro: "Votează melodiile preferate și influențează atmosfera din localurile în care te afli — fără cereri incomode."
   },
   "users.feature2.title": {
-    en: "Discover New Music",
-    ro: "Descoperă muzică nouă"
+    en: "Find Your New Favorite Track",
+    ro: "Descoperă melodii noi"
   },
   "users.feature2.description": {
-    en: "Find new artists and tracks based on what's popular in your favorite spots.",
-    ro: "Descoperă artiști și melodii noi pe baza a ceea ce este popular în locurile tale preferate."
+    en: "Discover trending songs and artists based on what others are playing around you — right in your favorite spots.",
+    ro: "Află ce melodii prind la publicul din localurile preferate și lasă-te surprins de artiști noi."
   },
   "users.feature3.title": {
-    en: "Connect with Others",
-    ro: "Conectează-te cu alții"
+    en: "Follow the Sound, Find Your Spot",
+    ro: "Urmărește sunetul, găsește-ți locul"
   },
   "users.feature3.description": {
-    en: "Share music with friends and meet people with similar tastes.",
-    ro: "Împarte muzica cu prietenii și întâlnește oameni cu gusturi similare."
+    en: "Discover venues playing music that matches your taste.",
+    ro: "Descoperă localuri care cântă muzica care se potrivește gusturilor tale."
   },
   
   // For Businesses section
@@ -307,7 +307,7 @@ export const translations: Translations = {
   },
   "footer.links.users": {
     en: "For Users",
-    ro: "Pentru Utilizatori"
+    ro: "Pentru Clienți"
   },
   "footer.links.businesses": {
     en: "For Businesses",
