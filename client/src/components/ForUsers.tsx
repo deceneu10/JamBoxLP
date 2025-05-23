@@ -37,23 +37,7 @@ export default function ForUsers() {
         </div>
         
         <div className="grid md:grid-cols-3 gap-8 mb-16">
-          {/* Feature Card 1 */}
-          <FeatureCard 
-            icon={<i className="fas fa-vote-yea text-2xl"></i>}
-            title={t("users.feature1.title")}
-            description={t("users.feature1.description")}
-            color="primary"
-          />
-          
-          {/* Feature Card 2 */}
-          <FeatureCard 
-            icon={<i className="fas fa-coins text-2xl"></i>}
-            title={t("users.feature2.title")}
-            description={t("users.feature2.description")}
-            color="secondary"
-          />
-          
-          {/* Map Section */}
+          {/* Map Section - Now First */}
           <div className="flex flex-col items-center">
             <h3 className="text-xl font-bold mb-4 text-center text-foreground">{t("users.feature3.title")}</h3>
             <div className="rounded-lg overflow-hidden shadow-lg border border-accent w-full">
@@ -69,6 +53,22 @@ export default function ForUsers() {
               </div>
             </div>
           </div>
+          
+          {/* Feature Card 1 - Now Second */}
+          <FeatureCard 
+            icon={<i className="fas fa-vote-yea text-2xl"></i>}
+            title={t("users.feature1.title")}
+            description={t("users.feature1.description")}
+            color="primary"
+          />
+          
+          {/* Feature Card 2 - Now Third */}
+          <FeatureCard 
+            icon={<i className="fas fa-coins text-2xl"></i>}
+            title={t("users.feature2.title")}
+            description={t("users.feature2.description")}
+            color="secondary"
+          />
         </div>
         
         <div className="text-center">
