@@ -72,8 +72,8 @@ export const translations: Translations = {
     ro: "Află ce melodii prind la publicul din localurile preferate și lasă-te surprins de artiști noi."
   },
   "users.feature3.title": {
-    en: "Follow the Sound, Find Your Spot",
-    ro: "Urmărește sunetul, găsește-ți locul"
+    en: "Follow the Sound, Find Your Tribe",
+    ro: "Urmărește Sunetul, Găsește-ți Tribul"
   },
   "users.feature3.description": {
     en: "Discover venues playing music that matches your taste.",
