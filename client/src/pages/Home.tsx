@@ -11,7 +11,6 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <Navbar />
       <Hero />
-      <ForUsers />
       <ForBusinesses />
       
       {/* Contact Section */}
@@ -21,6 +20,7 @@ export default function Home() {
         </div>
       </section>
       
+      <ForUsers />
       <About />
       
       <Footer />
