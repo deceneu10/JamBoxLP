@@ -186,7 +186,7 @@ export default function ForBusinesses() {
 
         
         {/* Pricing Section with Swipable Mobile Support */}
-        <div className="mb-16">
+        <div className="mb-16" id="pricingElement">
           <h3 className="text-2xl font-bold text-center mb-8 text-foreground">{t("pricing.title")}</h3>
           
           {/* Responsive pricing section - Mobile swipe view for small screens, regular grid for desktop */}
