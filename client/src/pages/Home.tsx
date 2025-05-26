@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import ForUsers from "@/components/ForUsers";
 import ForBusinesses from "@/components/ForBusinesses";
+import OnboardingFlow from "@/components/OnboardingFlow";
 import About from "@/components/About";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
@@ -12,6 +13,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <ForBusinesses />
+      <OnboardingFlow />
       
       {/* Contact Section */}
       <section id="contact-section" className="py-20 bg-background border-t border-gray-800">
