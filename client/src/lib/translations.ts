@@ -297,6 +297,112 @@ export const translations: Translations = {
     en: "No signup required • Works on any device",
     ro: "Fără înregistrare necesară • Funcționează pe orice dispozitiv"
   },
+
+  // Privacy Policy page
+  "privacy.title": {
+    en: "Cookie Policy",
+    ro: "Politica de Cookie-uri"
+  },
+  "privacy.backToHome": {
+    en: "Back to Home",
+    ro: "Înapoi la Pagina Principală"
+  },
+  "privacy.section1.title": {
+    en: "1. Introduction",
+    ro: "1. Introducere"
+  },
+  "privacy.section1.content": {
+    en: "This Cookie Policy applies to all users of jambox.top. It explains how S.C. PRODUSE DIGITALE S.R.L. places, uses, and manages cookies when users browse this site.",
+    ro: "Această Politică de Cookie-uri se aplică tuturor utilizatorilor jambox.top. Explică cum S.C. PRODUSE DIGITALE S.R.L. plasează, folosește și gestionează cookie-urile atunci când utilizatorii navighează pe acest site."
+  },
+  "privacy.section2.title": {
+    en: "2. What Are Cookies?",
+    ro: "2. Ce Sunt Cookie-urile?"
+  },
+  "privacy.section2.paragraph1": {
+    en: "Cookies are small text files stored on your device when you access the internet. They are installed by web servers via your browser and help collect data passively. Cookies don't contain software, viruses, or spyware and don't access your hard drive.",
+    ro: "Cookie-urile sunt fișiere text mici stocate pe dispozitivul dvs. când accesați internetul. Sunt instalate de servere web prin intermediul browser-ului și ajută la colectarea pasivă a datelor. Cookie-urile nu conțin software, viruși sau spyware și nu accesează hard disk-ul."
+  },
+  "privacy.section2.paragraph2": {
+    en: "A cookie consists of:",
+    ro: "Un cookie constă din:"
+  },
+  "privacy.section2.list1": {
+    en: "The cookie name",
+    ro: "Numele cookie-ului"
+  },
+  "privacy.section2.list2": {
+    en: "The cookie value",
+    ro: "Valoarea cookie-ului"
+  },
+  "privacy.section2.paragraph3": {
+    en: "Only the server that set a cookie can access it again.",
+    ro: "Doar serverul care a setat un cookie îl poate accesa din nou."
+  },
+  "privacy.section3.title": {
+    en: "3. Why We Use Cookies",
+    ro: "3. De Ce Folosim Cookie-uri"
+  },
+  "privacy.section3.paragraph1": {
+    en: "Cookies improve your browsing experience and tailor services to individual needs. They help us:",
+    ro: "Cookie-urile îmbunătățesc experiența de navigare și adaptează serviciile la nevoile individuale. Ne ajută să:"
+  },
+  "privacy.section3.list1": {
+    en: "Detect errors",
+    ro: "Detectăm erori"
+  },
+  "privacy.section3.list2": {
+    en: "Provide anonymous usage stats",
+    ro: "Furnizăm statistici anonime de utilizare"
+  },
+  "privacy.section3.list3": {
+    en: "Predict future content needs",
+    ro: "Prezicem nevoile viitoare de conținut"
+  },
+  "privacy.section3.list4": {
+    en: "Save login info and preferences",
+    ro: "Salvăm informațiile de conectare și preferințele"
+  },
+  "privacy.section3.list5": {
+    en: "Allow comment posting",
+    ro: "Permitem postarea comentariilor"
+  },
+  "privacy.section4.title": {
+    en: "4. Cookie Lifespan",
+    ro: "4. Durata de Viață a Cookie-urilor"
+  },
+  "privacy.section4.paragraph1": {
+    en: "Cookies can be:",
+    ro: "Cookie-urile pot fi:"
+  },
+  "privacy.section4.list1": {
+    en: "Session cookies – deleted when you close your browser",
+    ro: "Cookie-uri de sesiune – șterse când închideți browser-ul"
+  },
+  "privacy.section4.list2": {
+    en: "Persistent cookies – stored until their expiration date or manually deleted",
+    ro: "Cookie-uri persistente – stocate până la data expirării sau șterse manual"
+  },
+  "privacy.section5.title": {
+    en: "5. What Cookies We Use",
+    ro: "5. Ce Cookie-uri Folosim"
+  },
+  "privacy.section5.list1": {
+    en: "Performance cookies – remember user preferences",
+    ro: "Cookie-uri de performanță – rețin preferințele utilizatorului"
+  },
+  "privacy.section5.list2": {
+    en: "Analytics cookies – track user interactions for statistics",
+    ro: "Cookie-uri de analiză – urmăresc interacțiunile utilizatorului pentru statistici"
+  },
+  "privacy.section5.list3": {
+    en: "Geo-targeting cookies – identify users' country of origin",
+    ro: "Cookie-uri de geo-targeting – identifică țara de origine a utilizatorilor"
+  },
+  "privacy.section5.list4": {
+    en: "Registration cookies – recognize logged-in users and link comments to user profiles",
+    ro: "Cookie-uri de înregistrare – recunosc utilizatorii conectați și leagă comentariile de profilurile utilizatorilor"
+  },
   
   // Contact form
   "contact.title": {
