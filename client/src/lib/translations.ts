@@ -82,36 +82,60 @@ export const translations: Translations = {
   
   // For Businesses section
   "business.title": {
-    en: "For Venues & Businesses",
-    ro: "Pentru Localuri"
+    en: "Why Venues Love JamBox",
+    ro: "De Ce Localurile Iubesc JamBox"
   },
   "business.subtitle": {
-    en: "Boost engagement and keep customers coming back",
-    ro: "Crește implicarea și păstrează clienții fideli"
+    en: "JamBox makes your venue's music interactive, profitable, and effortless. Here's how:",
+    ro: "JamBox face muzica din localul tău interactivă, profitabilă și fără efort. Iată cum:"
   },
   "business.feature1.title": {
-    en: "Boost Customer Engagement",
-    ro: "Crește implicarea clienților"
+    en: "No More Awkward Requests",
+    ro: "Fără Mai Multe Cereri Jenante"
   },
   "business.feature1.description": {
-    en: "Create a more interactive, engaging atmosphere that keeps guests staying longer.",
-    ro: "Creează o atmosferă mai interactivă și atractivă care îi face pe oaspeți să stea mai mult."
+    en: "Clients pick songs directly—your staff stays focused.",
+    ro: "Clienții aleg melodiile direct—personalul tău rămâne concentrat."
   },
   "business.feature2.title": {
-    en: "Drive Increased Revenue",
-    ro: "Generează venituri mai mari"
+    en: "Earn Extra Revenue",
+    ro: "Câștigă Venituri Suplimentare"
   },
   "business.feature2.description": {
-    en: "Longer stays mean more purchases, increasing your venue's average revenue per customer.",
-    ro: "Șederi mai lungi înseamnă mai multe achiziții, crescând venitul mediu per client al localului tău."
+    en: "Turn song picks into cash flow. Clients pay, you earn.",
+    ro: "Transformă alegerea melodiilor în flux de numerar. Clienții plătesc, tu câștigi."
   },
   "business.feature3.title": {
-    en: "Custom Music Experience",
-    ro: "Experiență muzicală personalizată"
+    en: "Zero Downloads, Zero Hassle",
+    ro: "Zero Descărcări, Zero Bătăi de Cap"
   },
   "business.feature3.description": {
-    en: "Create the perfect playlist for your venue while still letting customers have input.",
-    ro: "Creează lista de redare perfectă pentru localul tău, permițând în același timp clienților să aibă un cuvânt de spus."
+    en: "100% online—nothing to download or install.",
+    ro: "100% online—nimic de descărcat sau instalat."
+  },
+  "business.feature4.title": {
+    en: "Stay in Full Control",
+    ro: "Păstrează Controlul Complet"
+  },
+  "business.feature4.description": {
+    en: "Only your approved playlists and genres. No surprises.",
+    ro: "Doar playlisturile și genurile tale aprobate. Fără surprize."
+  },
+  "business.feature5.title": {
+    en: "No Extra Subscriptions",
+    ro: "Fără Abonamente Suplimentare"
+  },
+  "business.feature5.description": {
+    en: "Integrate with your existing Spotify or YouTube subscription.",
+    ro: "Integrează cu abonamentul tău existent de Spotify sau YouTube."
+  },
+  "business.feature6.title": {
+    en: "Attract the Next Generation",
+    ro: "Atrage Generația Următoare"
+  },
+  "business.feature6.description": {
+    en: "Stand out to Gen Z clients who crave personalized experiences.",
+    ro: "Ieși în evidență pentru clienții Gen Z care doresc experiențe personalizate."
   },
   
   // Pricing section

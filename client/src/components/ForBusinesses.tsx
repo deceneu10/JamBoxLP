@@ -164,22 +164,37 @@ export default function ForBusinesses() {
           </p>
         </div>
         
-        {/* Feature Grid */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        {/* Feature Grid - 6 Features */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           <BusinessFeature
-            icon={<i className="fas fa-users text-xl"></i>}
+            icon={<i className="fas fa-comments text-xl"></i>}
             title={t("business.feature1.title")}
             description={t("business.feature1.description")}
           />
           <BusinessFeature
-            icon={<i className="fas fa-chart-line text-xl"></i>}
+            icon={<i className="fas fa-dollar-sign text-xl"></i>}
             title={t("business.feature2.title")}
             description={t("business.feature2.description")}
           />
           <BusinessFeature
-            icon={<i className="fas fa-sliders-h text-xl"></i>}
+            icon={<i className="fas fa-cloud text-xl"></i>}
             title={t("business.feature3.title")}
             description={t("business.feature3.description")}
+          />
+          <BusinessFeature
+            icon={<i className="fas fa-shield-alt text-xl"></i>}
+            title={t("business.feature4.title")}
+            description={t("business.feature4.description")}
+          />
+          <BusinessFeature
+            icon={<i className="fas fa-ban text-xl"></i>}
+            title={t("business.feature5.title")}
+            description={t("business.feature5.description")}
+          />
+          <BusinessFeature
+            icon={<i className="fas fa-star text-xl"></i>}
+            title={t("business.feature6.title")}
+            description={t("business.feature6.description")}
           />
         </div>
         
