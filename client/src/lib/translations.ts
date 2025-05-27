@@ -279,6 +279,24 @@ export const translations: Translations = {
     en: "Guests vote or dedicate songs from your playlist. Most-loved tracks move up the queue — and your revenue goes up with them. Longer visits, happier guests, more orders, and passive income.",
     ro: "Oaspeții votează sau dedică melodii din playlist-ul tău. Piesele cele mai iubite urcă în coadă — și venitul tău crește odată cu ele. Vizite mai lungi, oaspeți mai fericiți, mai multe comenzi și venit pasiv."
   },
+
+  // Demo Call to Action section
+  "demo.title": {
+    en: "Try Our Demo Now",
+    ro: "Încearcă Demo-ul Nostru Acum"
+  },
+  "demo.subtitle": {
+    en: "Experience JamBox in action and see how it transforms your venue's music experience",
+    ro: "Experimentează JamBox în acțiune și vezi cum transformă experiența muzicală din localul tău"
+  },
+  "demo.button": {
+    en: "Try Live Demo",
+    ro: "Încearcă Demo Live"
+  },
+  "demo.hint": {
+    en: "No signup required • Works on any device",
+    ro: "Fără înregistrare necesară • Funcționează pe orice dispozitiv"
+  },
   
   // Contact form
   "contact.title": {

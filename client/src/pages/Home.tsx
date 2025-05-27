@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import DemoCallToAction from "@/components/DemoCallToAction";
 import ForUsers from "@/components/ForUsers";
 import ForBusinesses from "@/components/ForBusinesses";
 import OnboardingFlow from "@/components/OnboardingFlow";
@@ -12,6 +13,7 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <Navbar />
       <Hero />
+      <DemoCallToAction />
       <ForBusinesses />
       <OnboardingFlow />
       
