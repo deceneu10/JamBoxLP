@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext, ReactNode } from 'react';
+import React, { createContext, useState, useContext, ReactNode, useEffect } from 'react';
 import { getTranslation } from './translations';
 
 type LanguageContextType = {
@@ -16,7 +16,21 @@ const LanguageContext = createContext<LanguageContextType>({
 });
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLanguage] = useState(defaultLanguage);
+  // Initialize language from localStorage or default
+  const [language, setLanguageState] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('jambox-language') || defaultLanguage;
+    }
+    return defaultLanguage;
+  });
+
+  // Update localStorage whenever language changes
+  const setLanguage = (lang: string) => {
+    setLanguageState(lang);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('jambox-language', lang);
+    }
+  };
 
   const t = (key: string) => getTranslation(key, language);
 
