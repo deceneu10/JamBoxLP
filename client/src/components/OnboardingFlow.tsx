@@ -19,39 +19,21 @@ export default function OnboardingFlow() {
     },
     {
       number: 2,
-      icon: "fab fa-spotify",
+      icon: "fas fa-sliders-h",
       title: t("onboarding.step2.title"),
       description: t("onboarding.step2.description")
     },
     {
       number: 3,
-      icon: "fas fa-music",
+      icon: "fas fa-qrcode",
       title: t("onboarding.step3.title"),
       description: t("onboarding.step3.description")
     },
     {
       number: 4,
-      icon: "fas fa-cogs",
+      icon: "fas fa-chart-line",
       title: t("onboarding.step4.title"),
       description: t("onboarding.step4.description")
-    },
-    {
-      number: 5,
-      icon: "fas fa-qrcode",
-      title: t("onboarding.step5.title"),
-      description: t("onboarding.step5.description")
-    },
-    {
-      number: 6,
-      icon: "fas fa-users",
-      title: t("onboarding.step6.title"),
-      description: t("onboarding.step6.description")
-    },
-    {
-      number: 7,
-      icon: "fas fa-heart",
-      title: t("onboarding.step7.title"),
-      description: t("onboarding.step7.description")
     }
   ];
 

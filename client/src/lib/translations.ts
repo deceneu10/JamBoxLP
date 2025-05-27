@@ -240,68 +240,44 @@ export const translations: Translations = {
     ro: "Cum Funcționează"
   },
   "onboarding.subtitle": {
-    en: "Get started with JamBox in 7 simple steps and transform your venue's music experience",
-    ro: "Începe cu JamBox în 7 pași simpli și transformă experiența muzicală din localul tău"
+    en: "Get started with JamBox in 4 simple steps and transform your venue's music experience",
+    ro: "Începe cu JamBox în 4 pași simpli și transformă experiența muzicală din localul tău"
   },
   "onboarding.scrollHint": {
     en: "Swipe to see all steps",
     ro: "Glisează pentru a vedea toți pașii"
   },
   "onboarding.step1.title": {
-    en: "Sign up your venue",
-    ro: "Înregistrează-ți localul"
+    en: "Sign Up & Plug In Your Music",
+    ro: "Înregistrează-te și Conectează Muzica"
   },
   "onboarding.step1.description": {
-    en: "Create your account and register your location in just a few clicks.",
-    ro: "Creează-ți contul și înregistrează-ți locația în doar câteva click-uri."
+    en: "Create your venue account in minutes and connect your existing Spotify or YouTube playlist — or let JamBox craft one for you. No extra tools, no tech fuss.",
+    ro: "Creează contul localului în câteva minute și conectează playlist-ul tău de Spotify sau YouTube — sau lasă JamBox să îți creeze unul. Fără unelte suplimentare, fără complicații tehnice."
   },
   "onboarding.step2.title": {
-    en: "Connect your music source",
-    ro: "Conectează sursa de muzică"
+    en: "Pick the Sound, Stay in Control",
+    ro: "Alege Sunetul, Păstrează Controlul"
   },
   "onboarding.step2.description": {
-    en: "Use your existing Spotify or YouTube account — or we'll set one up for you.",
-    ro: "Folosește contul tău de Spotify sau YouTube — sau îți creăm noi unul."
+    en: "Use your admin panel to set the vibe: select genres, curate playlists, and filter out unwanted tracks. You decide what guests can interact with — JamBox just makes it smooth.",
+    ro: "Folosește panoul de administrare pentru a seta atmosfera: selectează genuri, curează playlisturi și filtrează piesele nedorite. Tu decizi cu ce pot interacționa oaspeții — JamBox doar face totul să meargă fluid."
   },
   "onboarding.step3.title": {
-    en: "Pick your sound",
-    ro: "Alege-ți sunetul"
+    en: "Place Your QR Codes",
+    ro: "Plasează Codurile QR"
   },
   "onboarding.step3.description": {
-    en: "Choose music genres and playlists that match your vibe — full control stays with you.",
-    ro: "Alege genurile muzicale și playlisturile care se potrivesc atmosferei tale — controlul complet rămâne la tine."
+    en: "Download and print custom QR codes right from your dashboard. Place them on tables, menus, or walls. One quick scan, and guests are instantly connected — no app, no downloads.",
+    ro: "Descarcă și tipărește coduri QR personalizate direct din tabloul de bord. Plasează-le pe mese, meniuri sau pereți. O scanare rapidă și oaspeții sunt conectați instant — fără aplicație, fără descărcări."
   },
   "onboarding.step4.title": {
-    en: "Set the rules",
-    ro: "Stabilește regulile"
+    en: "Let the Crowd Take Over (and Boost Your Bottom Line)",
+    ro: "Lasă Mulțimea să Preia Controlul (și Crește-ți Profitul)"
   },
   "onboarding.step4.description": {
-    en: "Manage what plays, when, and how from your admin panel. Just like you're used to — but smarter.",
-    ro: "Gestionează ce se cântă, când și cum din panoul de administrare. Ca de obicei — dar mai inteligent."
-  },
-  "onboarding.step5.title": {
-    en: "Print & place QR codes",
-    ro: "Tipărește și plasează codurile QR"
-  },
-  "onboarding.step5.description": {
-    en: "Your panel generates a QR code. Print it and place it on tables, menus, or walls.",
-    ro: "Panoul tău generează un cod QR. Tipărește-l și plasează-l pe mese, meniuri sau pereți."
-  },
-  "onboarding.step6.title": {
-    en: "Let guests join the vibe",
-    ro: "Lasă oaspeții să se alăture atmosferei"
-  },
-  "onboarding.step6.description": {
-    en: "They scan the code, vote or suggest songs (only from your chosen playlists), and shape the mood.",
-    ro: "Scanează codul, votează sau sugerează melodii (doar din playlisturile tale alese) și modelează atmosfera."
-  },
-  "onboarding.step7.title": {
-    en: "Enjoy the live experience",
-    ro: "Bucură-te de experiența live"
-  },
-  "onboarding.step7.description": {
-    en: "Songs get queued automatically. Most-voted tracks rise up. You sit back and let the music build connection.",
-    ro: "Melodiile se adaugă automat în coadă. Piesele cu cele mai multe voturi urcă. Te relaxezi și lași muzica să creeze conexiuni."
+    en: "Guests vote or dedicate songs from your playlist. Most-loved tracks move up the queue — and your revenue goes up with them. Longer visits, happier guests, more orders, and passive income.",
+    ro: "Oaspeții votează sau dedică melodii din playlist-ul tău. Piesele cele mai iubite urcă în coadă — și venitul tău crește odată cu ele. Vizite mai lungi, oaspeți mai fericiți, mai multe comenzi și venit pasiv."
   },
   
   // Contact form
