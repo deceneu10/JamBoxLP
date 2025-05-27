@@ -91,7 +91,7 @@ export const translations: Translations = {
   },
   "business.feature1.title": {
     en: "No More Awkward Requests",
-    ro: "Fără Mai Multe Cereri Jenante"
+    ro: "Fara Cereri Insistente"
   },
   "business.feature1.description": {
     en: "Clients pick songs directly—your staff stays focused.",

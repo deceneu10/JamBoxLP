@@ -46,10 +46,6 @@ export default function Footer() {
           <div className="md:w-1/3">
             <h4 className="text-lg font-bold mb-4 text-foreground">{t("footer.contact.title")}</h4>
             <ul className="space-y-3">
-              <li className="flex items-start space-x-3">
-                <i className="fas fa-map-marker-alt mt-1 text-accent"></i>
-                <span className="text-gray-300">{t("footer.contact.address")}</span>
-              </li>
               <li className="flex items-center space-x-3">
                 <i className="fas fa-envelope text-primary"></i>
                 <a href="mailto:jambox.vibe@gmail.com" className="text-gray-300 hover:text-primary transition">{t("footer.contact.email")}</a>
