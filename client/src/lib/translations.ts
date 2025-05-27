@@ -300,108 +300,236 @@ export const translations: Translations = {
 
   // Privacy Policy page
   "privacy.title": {
-    en: "Cookie Policy",
-    ro: "Politica de Cookie-uri"
+    en: "Privacy Policy",
+    ro: "Politica de Confidențialitate"
   },
   "privacy.backToHome": {
     en: "Back to Home",
     ro: "Înapoi la Pagina Principală"
   },
+  
+  // Section 1: Contact Details
   "privacy.section1.title": {
+    en: "1. CONTACT DETAILS",
+    ro: "1. DETALII DE CONTACT"
+  },
+  "privacy.section1.content": {
+    en: "The website jambox.top is owned and managed by PRODUSE DIGITALE SRL, a Romanian legal entity, which can be contacted in the following ways:\n\nPhone: +40727934162\nEmail: jambox.vibe@gmail.com\nAddress: Sos Morarilor 4h, Bloc F3, Et. 10, Ap. 60, Sector 2, Bucharest\nCompany info: PRODUSE DIGITALE SRL, VAT ID: 42201514, Trade Registry No.: J40/1385/2020",
+    ro: "Site-ul jambox.top este deținut și gestionat de PRODUSE DIGITALE SRL, o entitate juridică română, care poate fi contactată în următoarele moduri:"
+  },
+
+  // Section 2: General Information
+  "privacy.section2.title": {
+    en: "2. GENERAL INFORMATION",
+    ro: "2. INFORMAȚII GENERALE"
+  },
+  "privacy.section2.content": {
+    en: "This document is one way we show you that your trust is not one-sided—we also take all necessary measures to ensure your visit to our site is pleasant and free from unwanted surprises. For any questions or concerns regarding the terms below or any aspect of data confidentiality, please contact us at: jambox.vibe@gmail.com",
+    ro: "Acest document este o modalitate prin care vă arătăm că încrederea dvs. nu este unilaterală—luăm și toate măsurile necesare pentru a ne asigura că vizita dvs. pe site-ul nostru este plăcută și fără surprize nedorite."
+  },
+
+  // Section 3: What Information We Collect
+  "privacy.section3.title": {
+    en: "3. WHAT INFORMATION WE COLLECT",
+    ro: "3. CE INFORMAȚII COLECTĂM"
+  },
+  "privacy.section3.intro": {
+    en: "We collect information from users in the following ways:",
+    ro: "Colectăm informații de la utilizatori în următoarele moduri:"
+  },
+  "privacy.section3.list1": {
+    en: "Directly from the user",
+    ro: "Direct de la utilizator"
+  },
+  "privacy.section3.list2": {
+    en: "From traffic reports recorded by the server",
+    ro: "Din rapoartele de trafic înregistrate de server"
+  },
+  "privacy.section3.list3": {
+    en: "Through cookies",
+    ro: "Prin cookie-uri"
+  },
+  "privacy.section3.subsection1": {
+    en: "3.1 Directly provided by the user\nWhen you subscribe to a service or complete a form, we may ask for your full name, email address, phone number, or other personal info. The more info you provide voluntarily, the better we can tailor your experience.",
+    ro: "3.1 Furnizate direct de utilizator"
+  },
+  "privacy.section3.subsection2": {
+    en: "3.2 Server traffic report info\nWhen you visit our website, you reveal some information like your IP address, visit time, and referrer. Like most platforms, we log this information.",
+    ro: "3.2 Informații din rapoartele de trafic ale serverului"
+  },
+  "privacy.section3.subsection3": {
+    en: "3.3 Cookies\nTo personalize your experience, we use cookies to store and track your preferences. For example, we might use cookies to recognize you and deliver content tailored to your interests. Third-party advertising networks might also use cookies to adjust messages to your preferences. Most browsers accept cookies by default, but you can change your browser settings to notify you or refuse them. Be aware that some site sections may not display properly if you block cookies.",
+    ro: "3.3 Cookie-uri"
+  },
+
+  // Section 4: How and When Your Data is Used
+  "privacy.section4.title": {
+    en: "4. HOW AND WHEN YOUR DATA IS USED",
+    ro: "4. CUM ȘI CÂND SUNT FOLOSITE DATELE DVS."
+  },
+  "privacy.section4.subsection1": {
+    en: "4.1 User-provided information\nUsed to personalize our services and verify your identity when entering into potential contracts via our platform.",
+    ro: "4.1 Informații furnizate de utilizator"
+  },
+  "privacy.section4.subsection2": {
+    en: "4.2 Traffic report info\nHelps us understand which sections of our site are most relevant for users.",
+    ro: "4.2 Informații din rapoartele de trafic"
+  },
+  "privacy.section4.subsection3": {
+    en: "4.3 IP addresses\nCollected to ensure system security, prevent criminal activity, and offer anonymized usage patterns to advertising clients.",
+    ro: "4.3 Adrese IP"
+  },
+  "privacy.section4.subsection4": {
+    en: "4.4 Cookie-based info\nCookies allow us to save login details and preferences, providing a smoother experience and enabling statistical analysis for service improvements.",
+    ro: "4.4 Informații bazate pe cookie-uri"
+  },
+
+  // Section 5: How We Protect Your Data
+  "privacy.section5.title": {
+    en: "5. HOW WE PROTECT YOUR DATA",
+    ro: "5. CUM VĂ PROTEJĂM DATELE"
+  },
+  "privacy.section5.content": {
+    en: "We take privacy seriously. Any user traffic stats shared with third parties are aggregated and do not contain personally identifiable information. We will never ask for your password via unsolicited messages or calls. Always sign out and close your browser when using public networks. Despite our efforts, no online data transmission can be guaranteed 100% secure. You transmit data at your own risk. Once we receive it, we secure it per Romanian data protection standards.",
+    ro: "Luăm confidențialitatea în serios."
+  },
+
+  // Section 6: Who Has Access to Your Data
+  "privacy.section6.title": {
+    en: "6. WHO HAS ACCESS TO YOUR DATA",
+    ro: "6. CINE ARE ACCES LA DATELE DVS."
+  },
+  "privacy.section6.content": {
+    en: "We may share personal information with technical service providers (e.g., for hosting, analytics, or support). These providers are contractually required to maintain confidentiality and protect your data. We may disclose information if legally required or to protect our rights. When you provide information to us, it's shared only with Jambox unless the service is offered in partnership with another provider—those may have their own privacy policies, which we do not control.",
+    ro: "Putem împărtăși informații personale cu furnizori de servicii tehnice."
+  },
+
+  // Section 7: Third-Party Disclosure
+  "privacy.section7.title": {
+    en: "7. THIRD-PARTY DISCLOSURE",
+    ro: "7. DEZVĂLUIREA CĂTRE TERȚI"
+  },
+  "privacy.section7.content": {
+    en: "Jambox websites may use advertising services that employ cookies to deliver targeted ads. Where applicable, our policy will include links to those ad networks' privacy agreements. As mentioned earlier, some technical service providers may also receive limited data to help deliver and improve our services.",
+    ro: "Site-urile Jambox pot folosi servicii de publicitate care folosesc cookie-uri."
+  },
+
+  // Section 8: Your Rights
+  "privacy.section8.title": {
+    en: "8. YOUR RIGHTS",
+    ro: "8. DREPTURILE DVS."
+  },
+  "privacy.section8.intro": {
+    en: "Under applicable law, you have the right to:",
+    ro: "Conform legii aplicabile, aveți dreptul să:"
+  },
+  "privacy.section8.list1": {
+    en: "a. Confirm whether we process your data, request its content and source, verify accuracy, and request corrections or updates",
+    ro: "a. Confirmați dacă vă procesăm datele"
+  },
+  "privacy.section8.list2": {
+    en: "b. Request deletion or anonymization of your data or restrict its processing",
+    ro: "b. Solicitați ștergerea sau anonimizarea datelor"
+  },
+  "privacy.section8.list3": {
+    en: "c. Object to the processing of your personal data",
+    ro: "c. Vă opuneți procesării datelor personale"
+  },
+  "privacy.section8.list4": {
+    en: "d. Request limitations on processing when: d.1. You contest its accuracy (while we verify or correct it) d.2. Processing is unlawful, but you don't want deletion d.3. We no longer need the data, but you require it for legal claims",
+    ro: "d. Solicitați limitări în procesare"
+  },
+  "privacy.section8.list5": {
+    en: "e. Exercise your right to data portability (when processing is based on consent or a contract and done by automated means)",
+    ro: "e. Exercitați dreptul la portabilitatea datelor"
+  },
+  "privacy.section8.list6": {
+    en: "f. File a complaint with a supervisory authority",
+    ro: "f. Depuneți o plângere la o autoritate de supraveghere"
+  },
+  "privacy.section8.list7": {
+    en: "g. Not be subject to decisions based solely on automated processing, including profiling",
+    ro: "g. Nu fiți supus deciziilor bazate doar pe procesare automatizată"
+  },
+
+  // Section 9: Contact Us
+  "privacy.section9.title": {
+    en: "9. CONTACT US",
+    ro: "9. CONTACTAȚI-NE"
+  },
+  "privacy.section9.content": {
+    en: "For any questions or requests regarding your data, email us at jambox.vibe@gmail.com",
+    ro: "Pentru orice întrebări sau cereri referitoare la datele dvs., trimiteți-ne un email la jambox.vibe@gmail.com"
+  },
+
+  // Cookie Policy Section
+  "privacy.cookieTitle": {
+    en: "Cookie Policy",
+    ro: "Politica de Cookie-uri"
+  },
+  "privacy.cookie1.title": {
     en: "1. Introduction",
     ro: "1. Introducere"
   },
-  "privacy.section1.content": {
+  "privacy.cookie1.content": {
     en: "This Cookie Policy applies to all users of jambox.top. It explains how S.C. PRODUSE DIGITALE S.R.L. places, uses, and manages cookies when users browse this site.",
-    ro: "Această Politică de Cookie-uri se aplică tuturor utilizatorilor jambox.top. Explică cum S.C. PRODUSE DIGITALE S.R.L. plasează, folosește și gestionează cookie-urile atunci când utilizatorii navighează pe acest site."
+    ro: "Această Politică de Cookie-uri se aplică tuturor utilizatorilor jambox.top."
   },
-  "privacy.section2.title": {
+  "privacy.cookie2.title": {
     en: "2. What Are Cookies?",
-    ro: "2. Ce Sunt Cookie-urile?"
+    ro: "2. Ce sunt Cookie-urile?"
   },
-  "privacy.section2.paragraph1": {
-    en: "Cookies are small text files stored on your device when you access the internet. They are installed by web servers via your browser and help collect data passively. Cookies don't contain software, viruses, or spyware and don't access your hard drive.",
-    ro: "Cookie-urile sunt fișiere text mici stocate pe dispozitivul dvs. când accesați internetul. Sunt instalate de servere web prin intermediul browser-ului și ajută la colectarea pasivă a datelor. Cookie-urile nu conțin software, viruși sau spyware și nu accesează hard disk-ul."
+  "privacy.cookie2.content": {
+    en: "Cookies are small text files stored on your device when you access the internet. They are installed by web servers via your browser and help collect data passively. Cookies don't contain software, viruses, or spyware and don't access your hard drive.\n\nA cookie consists of:\n• The cookie name\n• The cookie value\n\nOnly the server that set a cookie can access it again.",
+    ro: "Cookie-urile sunt fișiere text mici stocate pe dispozitiv."
   },
-  "privacy.section2.paragraph2": {
-    en: "A cookie consists of:",
-    ro: "Un cookie constă din:"
-  },
-  "privacy.section2.list1": {
-    en: "The cookie name",
-    ro: "Numele cookie-ului"
-  },
-  "privacy.section2.list2": {
-    en: "The cookie value",
-    ro: "Valoarea cookie-ului"
-  },
-  "privacy.section2.paragraph3": {
-    en: "Only the server that set a cookie can access it again.",
-    ro: "Doar serverul care a setat un cookie îl poate accesa din nou."
-  },
-  "privacy.section3.title": {
+  "privacy.cookie3.title": {
     en: "3. Why We Use Cookies",
-    ro: "3. De Ce Folosim Cookie-uri"
+    ro: "3. De ce folosim Cookie-uri"
   },
-  "privacy.section3.paragraph1": {
-    en: "Cookies improve your browsing experience and tailor services to individual needs. They help us:",
-    ro: "Cookie-urile îmbunătățesc experiența de navigare și adaptează serviciile la nevoile individuale. Ne ajută să:"
+  "privacy.cookie3.content": {
+    en: "Cookies improve your browsing experience and tailor services to individual needs. They help us:\n• Detect errors\n• Provide anonymous usage stats\n• Predict future content needs\n• Save login info and preferences\n• Allow comment posting",
+    ro: "Cookie-urile îmbunătățesc experiența de navigare."
   },
-  "privacy.section3.list1": {
-    en: "Detect errors",
-    ro: "Detectăm erori"
-  },
-  "privacy.section3.list2": {
-    en: "Provide anonymous usage stats",
-    ro: "Furnizăm statistici anonime de utilizare"
-  },
-  "privacy.section3.list3": {
-    en: "Predict future content needs",
-    ro: "Prezicem nevoile viitoare de conținut"
-  },
-  "privacy.section3.list4": {
-    en: "Save login info and preferences",
-    ro: "Salvăm informațiile de conectare și preferințele"
-  },
-  "privacy.section3.list5": {
-    en: "Allow comment posting",
-    ro: "Permitem postarea comentariilor"
-  },
-  "privacy.section4.title": {
+  "privacy.cookie4.title": {
     en: "4. Cookie Lifespan",
-    ro: "4. Durata de Viață a Cookie-urilor"
+    ro: "4. Durata Cookie-urilor"
   },
-  "privacy.section4.paragraph1": {
-    en: "Cookies can be:",
-    ro: "Cookie-urile pot fi:"
+  "privacy.cookie4.content": {
+    en: "Cookies can be:\n• Session cookies – deleted when you close your browser\n• Persistent cookies – stored until their expiration date or manually deleted",
+    ro: "Cookie-urile pot fi de sesiune sau persistente."
   },
-  "privacy.section4.list1": {
-    en: "Session cookies – deleted when you close your browser",
-    ro: "Cookie-uri de sesiune – șterse când închideți browser-ul"
-  },
-  "privacy.section4.list2": {
-    en: "Persistent cookies – stored until their expiration date or manually deleted",
-    ro: "Cookie-uri persistente – stocate până la data expirării sau șterse manual"
-  },
-  "privacy.section5.title": {
+  "privacy.cookie5.title": {
     en: "5. What Cookies We Use",
-    ro: "5. Ce Cookie-uri Folosim"
+    ro: "5. Ce Cookie-uri folosim"
   },
-  "privacy.section5.list1": {
-    en: "Performance cookies – remember user preferences",
-    ro: "Cookie-uri de performanță – rețin preferințele utilizatorului"
+  "privacy.cookie5.content": {
+    en: "a) Performance cookies – remember user preferences\nb) Analytics cookies – track user interactions for statistics\nc) Geo-targeting cookies – identify users' country of origin\nd) Registration cookies – recognize logged-in users and link comments to user profiles",
+    ro: "Folosim cookie-uri de performanță, analiză și geo-targeting."
   },
-  "privacy.section5.list2": {
-    en: "Analytics cookies – track user interactions for statistics",
-    ro: "Cookie-uri de analiză – urmăresc interacțiunile utilizatorului pentru statistici"
+  "privacy.cookie6.title": {
+    en: "6. What Info Is Stored?",
+    ro: "6. Ce informații sunt stocate?"
   },
-  "privacy.section5.list3": {
-    en: "Geo-targeting cookies – identify users' country of origin",
-    ro: "Cookie-uri de geo-targeting – identifică țara de origine a utilizatorilor"
+  "privacy.cookie6.content": {
+    en: "Cookies store small text files that identify browsers. We use them until they expire or are manually deleted.",
+    ro: "Cookie-urile stochează fișiere text mici care identifică browser-ele."
   },
-  "privacy.section5.list4": {
-    en: "Registration cookies – recognize logged-in users and link comments to user profiles",
-    ro: "Cookie-uri de înregistrare – recunosc utilizatorii conectați și leagă comentariile de profilurile utilizatorilor"
+  "privacy.cookie7.title": {
+    en: "7. Browser Settings",
+    ro: "7. Setări Browser"
+  },
+  "privacy.cookie7.content": {
+    en: "If cookies are not an issue for you, and you're the sole user of your device, you can set a long cookie lifespan. For shared devices, consider clearing cookies after each session.\n\nYou can usually find cookie settings in your browser's 'Options' or 'Preferences' menu:\n• Internet Explorer\n• Firefox\n• Chrome\n• Safari",
+    ro: "Puteți găsi setările pentru cookie-uri în meniul browser-ului."
+  },
+  "privacy.cookie8.title": {
+    en: "8. How to Disable Cookies",
+    ro: "8. Cum să dezactivați Cookie-urile"
+  },
+  "privacy.cookie8.content": {
+    en: "All modern browsers allow cookie settings to be changed. If needed, use the links above or consult your browser's help section.",
+    ro: "Toate browser-ele moderne permit schimbarea setărilor pentru cookie-uri."
   },
   
   // Contact form
