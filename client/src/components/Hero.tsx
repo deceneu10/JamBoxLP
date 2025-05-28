@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/lib/LanguageContext";
+import MobileAppImage from "@assets/Mobile.png";
 
 export default function Hero() {
   const { t } = useLanguage();
@@ -30,63 +31,12 @@ export default function Hero() {
 
           </div>
           <div className="hidden md:flex md:w-1/2 relative justify-center">
-            <div className="w-full max-w-sm px-4 aspect-[9/16] relative bg-background rounded-3xl shadow-2xl border-2 border-primary/50 overflow-hidden">
+            <div className="w-full max-w-sm relative">
               <img 
-                src="https://images.unsplash.com/photo-1501612780327-45045538702b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&h=900" 
-                alt="People enjoying music together at venue" 
-                className="absolute inset-0 w-full h-full object-cover opacity-50"
+                src={MobileAppImage} 
+                alt="JamBox Mobile App Screenshot" 
+                className="w-full h-auto object-contain drop-shadow-2xl"
               />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/70 to-background"></div>
-              
-              <div className="absolute top-0 left-0 right-0 p-3">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center space-x-2">
-                    <div className="w-6 h-6 rounded-full overflow-hidden bg-background flex items-center justify-center">
-                      <svg width="24" height="24" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="512" height="512" fill="#10101E" />
-                        <path d="M256 105C207.4 105 168 144.4 168 193V319C168 367.6 207.4 407 256 407C304.6 407 344 367.6 344 319V193C344 144.4 304.6 105 256 105Z" stroke="#FF00FF" strokeWidth="12"/>
-                        <path d="M256 147C230.6 147 210 167.6 210 193V319C210 344.4 230.6 365 256 365C281.4 365 302 344.4 302 319V193C302 167.6 281.4 147 256 147Z" stroke="#00FFFF" strokeWidth="12"/>
-                        <path d="M256 256L226 226M256 256L286 226" stroke="#FFA500" strokeWidth="12"/>
-                      </svg>
-                    </div>
-                    <span className="text-lg font-bold text-white">JamBox</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <span className="text-sm text-white">Admin</span>
-                    <span className="text-sm text-secondary">User</span>
-                    <div className="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold">
-                      J
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="absolute bottom-0 left-0 right-0 p-4">
-                <div className="mb-4">
-                  <h3 className="text-xl font-bold text-white mb-4">Bine ai venit, JamBox-2</h3>
-                  <div className="bg-card p-4 rounded-xl mb-4">
-                    <h4 className="text-lg font-bold mb-2">Acum se cântă</h4>
-                    <div className="flex items-center space-x-3 mb-2">
-                      <div className="w-12 h-12 bg-gray-700 flex-shrink-0"></div>
-                      <div>
-                        <p className="font-bold">Till I Collapse</p>
-                        <p className="text-sm text-gray-400">Eminem</p>
-                        <p className="text-sm text-secondary">Selectat de: JamBox-1</p>
-                      </div>
-                    </div>
-                    <div className="w-full h-1 bg-gray-700 rounded-full overflow-hidden">
-                      <div className="h-full bg-secondary" style={{width: "75%"}}></div>
-                    </div>
-                    <div className="flex justify-between text-xs mt-1">
-                      <span>4:54</span>
-                      <span>4:58</span>
-                    </div>
-                  </div>
-                  <button className="w-full bg-green-500 text-white py-3 rounded-lg font-bold mb-4">
-                    Gata de selectare
-                  </button>
-                </div>
-              </div>
             </div>
           </div>
         </div>
