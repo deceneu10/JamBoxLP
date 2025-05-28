@@ -62,7 +62,7 @@ export default function Footer() {
           <p className="text-gray-400 mb-4 md:mb-0">&copy; {new Date().getFullYear()} JamBox. {t("footer.copyright")}</p>
           <div className="flex space-x-6">
             <a href="/privacy-policy" className="text-gray-400 hover:text-primary transition">{t("footer.privacy")}</a>
-            <a href="#" className="text-gray-400 hover:text-secondary transition">{t("footer.terms")}</a>
+            <a href="/terms-of-service" className="text-gray-400 hover:text-secondary transition">{t("footer.terms")}</a>
             <a href="#" className="text-gray-400 hover:text-accent transition">{t("footer.cookies")}</a>
           </div>
         </div>

@@ -531,6 +531,170 @@ export const translations: Translations = {
     en: "All modern browsers allow cookie settings to be changed. If needed, use the links above or consult your browser's help section.",
     ro: "Toate browserele moderne permit modificarea setarilor pentru cookie-uri. Consultati sectiunea de ajutor a browserului pentru detalii suplimentare."
   },
+
+  // Terms of Service page
+  "terms.title": {
+    en: "Terms of Service",
+    ro: "Termeni si Conditii"
+  },
+  "terms.backToHome": {
+    en: "Back to Home",
+    ro: "Inapoi la Pagina Principala"
+  },
+
+  // Section 1: Acceptance of Terms
+  "terms.section1.title": {
+    en: "ACCEPTANCE OF TERMS",
+    ro: "ACCEPTAREA CONDITIILOR"
+  },
+  "terms.section1.content": {
+    en: "By accessing this website and/or any of its pages, you agree to these terms of use. If you do not agree with the terms and conditions, please do not use this website.",
+    ro: "Prin accesarea acestui site web si/sau a oricarei pagini a acestuia sunteti de acord cu aceste conditii de utilizare. Daca nu sunteti de acord cu acesti termeni si conditii de utilizare, nu accesati acest site."
+  },
+
+  // Section 2: Description of Services
+  "terms.section2.title": {
+    en: "DESCRIPTION OF SERVICES",
+    ro: "DESCRIEREA SERVICIILOR"
+  },
+  "terms.section2.content": {
+    en: "Our website provides the information it contains for general informational purposes only. We make every effort to ensure accuracy at the time of publication but do not guarantee that the information is always up-to-date.",
+    ro: "Siteul nostru va pune la dispozitie informatiile din acest site web in scop informativ general si nu garanteaza de exactitatea lor la un moment dat, desi se va incerca pe cat posibil ca la publicarea lor pe site toate informatiile sa fie exacte."
+  },
+
+  // Section 3: Introduction
+  "terms.section3.title": {
+    en: "INTRODUCTION",
+    ro: "INTRODUCERE"
+  },
+  "terms.section3.content": {
+    en: "These General Terms and Conditions define the rules for using the jambox.top website by potential visitors or clients. By accessing and browsing this site, you accept the following usage terms.",
+    ro: "Prezentele Conditii Generale definesc conditiile de utilizare a site-ului jambox.top de catre potentialii vizitatori sau clienti. Accesand si navigand pe acest site, acceptati termenii de utilizare descrisi in continuare."
+  },
+
+  // Section 4: Rights to Website Content
+  "terms.section4.title": {
+    en: "RIGHTS TO WEBSITE CONTENT",
+    ro: "DREPTURILE ASUPRA CONTINUTULUI SITE-ULUI"
+  },
+  "terms.section4.paragraph1": {
+    en: "The software and digital assets contained within the jambox.top website are the property of PRODUSE DIGITALE SRL, VAT ID: 42201514, Trade Registry No.: J40/1385/2020 (hereafter referred to as \"Jambox\"). All content, products, and applications on this site are owned by Jambox, which reserves the right to modify the site's structure or content at any time without prior notice.",
+    ro: "Proprietarul aplicatiilor software continute de situl web jambox.top este entitatea juridica PRODUSE DIGITALE SRL, CUI: 42201514, J40/1385/2020 (denumita in continuare \"jambox\"). Toate informatiile, produsele sau aplicatiile continute in acest site sunt proprietatea jambox, care isi rezerva dreptul de a modifica continutul si/sau structura site-ului in orice moment si fara nici o informare prealabila."
+  },
+  "terms.section4.paragraph2": {
+    en: "The entire content of the jambox.top website is protected under copyright law. All rights to the pages, content, and layout are owned by PRODUSE DIGITALE SRL. It is strictly forbidden to copy, modify, display, distribute, transmit, publish, license, commercialize, or create derivative materials or use the site's content for any purpose without prior written consent from PRODUSE DIGITALE SRL.",
+    ro: "Intregul continut al site-ului jambox.top este protejat prin legea drepturilor de autor, toate drepturile fiind rezervate. Toate drepturile referitoare la pagini, continutul si prezentarea site-ului sunt detinute de PRODUSE DIGITALE SRL. Este interzisa copierea, modificarea, afisarea, distribuirea, transmiterea, publicarea, comercializarea, licentierea, crearea unor materiale derivate sau utilizarea continutului site-ului in orice scop fara confirmarea scrisa din partea PRODUSE DIGITALE SRL."
+  },
+  "terms.section4.paragraph3": {
+    en: "Access to and use of jambox.top is free of charge and intended to help users find information quickly and easily based on their individual needs. The information provided is of general interest and available to all users for free. The term \"user\" refers to any individual or legal entity accessing this site.",
+    ro: "Accesul si utilizarea jambox.top sunt gratuite si au scopul de a veni in ajutorul utilizatorilor pentru a gasi informatiile necesare in cel mai usor si rapid mod posibil, conform cerintelor fiecaruia. Informatiile sunt de interes general si sunt puse la dispozitia utilizatorilor in mod gratuit. Prin termenul \"utilizator\" al acestei pagini se intelege orice persoana fizica sau juridica care va accesa pagina."
+  },
+
+  // Section 5: Disclaimer of Liability
+  "terms.section5.title": {
+    en: "DISCLAIMER OF LIABILITY",
+    ro: "NEANGAJAREA RASPUNDERII"
+  },
+  "terms.section5.intro": {
+    en: "The content provided on this site, including descriptions of activities, products, and services, comes with no guarantees regarding:",
+    ro: "Continutul informatiilor se refera la descrierea intr-un anumit grad de detaliere a activitatilor, produselor si serviciilor nu va acorda nici o garantie referitoare la:"
+  },
+  "terms.section5.list1": {
+    en: "uninterrupted or error-free access to the site",
+    ro: "evitarea utilizarii anevoioase sau intreruperii in utilizare a site-ului"
+  },
+  "terms.section5.list2": {
+    en: "the absence of negative effects on other systems due to site use",
+    ro: "neafectarea in sens negativ a altor sisteme prin utilizarea site-ului"
+  },
+  "terms.section5.list3": {
+    en: "the absence of viruses or other harmful components",
+    ro: "inexistenta pe site-ul pus la dispozitie a virusilor sau alte componente care ar putea dauna utilizatorilor"
+  },
+  "terms.section5.paragraph1": {
+    en: "Jambox is not liable for any direct or indirect damages resulting from the use of this site. All information on the site regarding Jambox products, prices, promotional campaigns, technical details, etc., is offered for informational purposes only. Nothing on the jambox.top website should be interpreted as a binding offer, and Jambox assumes no liability unless explicitly agreed upon in subsequent contracts.",
+    ro: "Astfel, jambox nu poate fi responsabila pentru nici un fel de daune directe sau indirecte produse prin utilizarea site-ului sau. Toate informatiile prezentate pe site cu privire la produsele jambox.top, preturi, informatii, campanii si promotii de marketing, aspecte tehnice, sunt prezentate cu titlu informativ. Nimic din continutul site-ului jambox.top nu poate constitui o oferta ferma de a contracta si nu poate angaja raspunderea jambox in lipsa unor acorduri ulterioare."
+  },
+  "terms.section5.paragraph2": {
+    en: "We do not make any representations or warranties regarding the accuracy, completeness, or relevance of content, guidelines, or consulting offered through this site. We expressly disclaim liability for any costs, losses, or damages incurred from using this content.",
+    ro: "Situl jambox.top nu face nicio declaratie, promisiune sau garantie cu privire la exactitatea, exhaustivitatea sau caracterul adecvat al prezentului continut, al indrumarilor si a consultantei, nu isi asuma nicio obligatie de rezultat sau diligenta fata de nicio persoana, exclud in mod expres si neaga raspunderea pentru orice cost, pierdere sau daunele suferite ca urmare a utilizarii continutului."
+  },
+
+  // Section 6: Purpose of Site Content
+  "terms.section6.title": {
+    en: "PURPOSE OF SITE CONTENT",
+    ro: "OBIECTIVUL CONTINUTULUI SITE-ULUI"
+  },
+  "terms.section6.paragraph1": {
+    en: "The aim of the site's content is to deliver accurate and up-to-date information. Jambox cannot guarantee the site is free of errors but commits to correcting any mistakes as soon as possible.",
+    ro: "Obiectivul continutului site-ului este de a transmite informatii actualizate si exacte. jambox nu poate garanta ca prezentele pagini nu contin erori si asigura ca va depune toate diligentele pentru realizarea unei informari corecte si remedierea eventualelor erori."
+  },
+  "terms.section6.paragraph2": {
+    en: "If you wish to purchase a service or product shown on the site, you should first contact Jambox via the Contact page to confirm availability, pricing, technical specifications, and terms.",
+    ro: "Orice persoana care doreste sa-si procure unul din serviciile sau produsele prezentate in site este rugata sa contacteze jambox prin unul din mijloacele afisate in pagina de Contact a site-ului, pentru a se informa atat asupra disponibilitatii serviciului sau produsului in cauza cat si asupra conditiilor contractuale, tarifelor si informatiilor tehnice sau de alta natura."
+  },
+
+  // Section 7: Personal Information
+  "terms.section7.title": {
+    en: "PERSONAL INFORMATION",
+    ro: "INFORMATII PERSONALE"
+  },
+  "terms.section7.paragraph1": {
+    en: "When this site requests personal information, it is to identify or contact you, particularly when using on-site applications. Such information may include your name, address, phone number, email address, and your usage of Jambox products and services, among other details related to your request.",
+    ro: "Cand prin intermediul prezentului site va sunt solicitate informatii, aceasta are ca scop identificarea dumneavoastra sau posibilitatea de a va contacta. Acest lucru este cu atat mai necesar in cazul folosirii aplicatiilor disponibile pe site."
+  },
+  "terms.section7.paragraph2": {
+    en: "To better respond to user needs, any personal data submitted via this site may be electronically stored and processed.",
+    ro: "Natura informatiilor solicitate se refera in special la date personale (nume, adresa, numere de telefon), adresa de e-mail, modul in care sunt utilizate sau intentioneaza sa fie utilizate produsele si/sau serviciile jambox, dar poate include si alte informatii aflate in stransa legatura cu utilizarea serviciilor si/sau produselor solicitate."
+  },
+  "terms.section7.paragraph3": {
+    en: "",
+    ro: "Cu scopul de a raspunde mai bine nevoilor si intrebarilor utilizatorilor site-ului, informatiile solicitate prin intermediul acestui site vor face obiectul unei stocari si prelucrari electronice."
+  },
+
+  // Section 8: Links to Other Sites
+  "terms.section8.title": {
+    en: "LINKS TO OTHER SITES",
+    ro: "LEGATURA CU ALTE SITE-URI"
+  },
+  "terms.section8.content": {
+    en: "This site may contain links to other websites deemed useful by Jambox. These external sites are not under our control, and we are not responsible for their content or policies. Using those links means accepting the separate terms and conditions of those websites. Jambox does not guarantee the accuracy or relevance of information found on third-party websites.",
+    ro: "Prezentul site poate contine legaturi sau trimiteri catre alte site-uri considerate de jambox utile in legatura cu continutul site-ului sau si care nu se afla sub controlul sau indrumarea sa. In cazul utilizarii acestor legaturi sau trimiteri se vor aplica conditiile generale de utilizare corespunzatoare acelor site-uri. jambox nu poate garanta/controla actualitatea/exactitatea informatiilor prezente pe site-urile unor terti, la care se face trimitere de pe site-ul sau."
+  },
+
+  // Section 9: Information Provided Through the Site
+  "terms.section9.title": {
+    en: "INFORMATION PROVIDED THROUGH THE SITE",
+    ro: "INFORMATIILE OFERITE PRIN INTERMEDIUL SITE-ULUI"
+  },
+  "terms.section9.intro": {
+    en: "Anyone visiting jambox.top who submits personal data through the site expressly agrees to the following:",
+    ro: "Orice persoana care viziteaza site-ul jambox.top si care ofera date sau informatii cu caracter personal prin intermediul acestui site isi manifesta acordul in mod expres si neechivoc pentru urmatoarele:"
+  },
+  "terms.section9.list1": {
+    en: "The processing of this data by Jambox",
+    ro: "prelucrarea acestor date si informatii personale de catre jambox"
+  },
+  "terms.section9.list2": {
+    en: "Receiving promotional materials related to direct marketing",
+    ro: "transmiterii de materiale promotionale specifice operatiunilor de marketing direct"
+  },
+  "terms.section9.list3": {
+    en: "Allowing Jambox to handle any requests, inquiries, or complaints (see Contact page)",
+    ro: "solutionarea de catre jambox a cererilor, intrebarilor si reclamatiilor adresate (a se vedea pagina Contact din site)"
+  },
+  "terms.section9.list4": {
+    en: "Other lawful activities that do not require separate user approval",
+    ro: "alte activitati legale care nu necesita aprobarea separata a utilizatorului"
+  },
+  "terms.section9.paragraph1": {
+    en: "Jambox commits to keeping this information confidential.",
+    ro: "jambox va pastra confidentialitatea acestor informatii."
+  },
+  "terms.section9.paragraph2": {
+    en: "Continued use of the site implies your explicit and unambiguous agreement to these practices, in accordance with Law 190/2018, implementing Regulation (EU) 2016/679 (GDPR) on the protection of personal data. For any clarification regarding your rights or the use of this site, please contact us via the Contact section.",
+    ro: "Utilizarea in continuare a acestui site constituie acordul expres si neechivoc al dumneavoastra in conformitate cu prevederile legii 190/2018 privind masuri de punere in aplicare a Regulamentului (UE) 2016/679, a directivelor UE in domeniul GDPR si a Regulamentului (UE) 2016/679 privind protectia persoanelor fizice in ceea ce priveste prelucrarea datelor cu caracter personal si privind libera circulatie a acestor date. Pentru orice nelamurire in legatura cu exercitarea drepturilor dumneavoastra referitoare la utilizarea site-ului si la protectia utilizarii va rugam sa ne contactati prin intermediul sectiunii Contact din site."
+  },
   
   // Contact form
   "contact.title": {
