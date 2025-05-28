@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/lib/LanguageContext";
-import MobileAppImage from "@assets/Mobile.png";
+import MobileAppImage from "@assets/Mobile_vertical.png";
 
 export default function Hero() {
   const { t } = useLanguage();
@@ -31,7 +31,7 @@ export default function Hero() {
 
           </div>
           <div className="hidden md:flex md:w-1/2 relative justify-center">
-            <div className="w-full max-w-sm relative">
+            <div className="w-full max-w-md relative">
               <img 
                 src={MobileAppImage} 
                 alt="JamBox Mobile App Screenshot" 
