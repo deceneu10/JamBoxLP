@@ -17,16 +17,10 @@ export default function Footer() {
               {t("footer.description")}
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-primary hover:text-primary/80 transition">
+              <a href="https://www.facebook.com/jamboxmusicapp" className="text-primary hover:text-primary/80 transition">
                 <i className="fab fa-facebook-f text-xl"></i>
               </a>
-              <a href="#" className="text-secondary hover:text-secondary/80 transition">
-                <i className="fab fa-twitter text-xl"></i>
-              </a>
-              <a href="#" className="text-accent hover:text-accent/80 transition">
-                <i className="fab fa-instagram text-xl"></i>
-              </a>
-              <a href="#" className="text-primary hover:text-primary/80 transition">
+              <a href="https://www.linkedin.com/company/jamboxapp" className="text-primary hover:text-primary/80 transition">
                 <i className="fab fa-linkedin-in text-xl"></i>
               </a>
             </div>
@@ -59,11 +53,10 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-800 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 mb-4 md:mb-0">&copy; {new Date().getFullYear()} JamBox. {t("footer.copyright")}</p>
+          <p className="text-gray-400 mb-4 md:mb-0">&copy; {new Date().getFullYear()} JamBox. All rights reserved.</p>
           <div className="flex space-x-6">
             <a href="/privacy-policy" className="text-gray-400 hover:text-primary transition">{t("footer.privacy")}</a>
             <a href="/terms-of-service" className="text-gray-400 hover:text-secondary transition">{t("footer.terms")}</a>
-            <a href="#" className="text-gray-400 hover:text-accent transition">{t("footer.cookies")}</a>
           </div>
         </div>
       </div>
