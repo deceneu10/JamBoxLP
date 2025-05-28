@@ -17,10 +17,10 @@ export default function Footer() {
               {t("footer.description")}
             </p>
             <div className="flex space-x-4">
-              <a href="https://www.facebook.com/jamboxmusicapp" className="text-primary hover:text-primary/80 transition">
+              <a href="https://www.facebook.com/jamboxmusicapp" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 transition">
                 <i className="fab fa-facebook-f text-xl"></i>
               </a>
-              <a href="https://www.linkedin.com/company/jamboxapp" className="text-primary hover:text-primary/80 transition">
+              <a href="https://www.linkedin.com/company/jamboxapp" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 transition">
                 <i className="fab fa-linkedin-in text-xl"></i>
               </a>
             </div>
