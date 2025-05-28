@@ -789,6 +789,14 @@ export const translations: Translations = {
     en: "Send Message",
     ro: "Trimite Mesaj"
   },
+  "contact.success.title": {
+    en: "Message Sent!",
+    ro: "Mesaj Trimis!"
+  },
+  "contact.error.title": {
+    en: "Sending Error",
+    ro: "Eroare la trimitere"
+  },
   
   // Footer
   "footer.contact.title": {

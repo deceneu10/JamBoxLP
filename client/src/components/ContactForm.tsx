@@ -5,7 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/hooks/use-toast";
-import { getRandomMessage, successMessages, errorMessages } from "@/lib/contactMessages";
+import { getRandomSuccessMessage, getRandomErrorMessage } from "@/lib/contactMessages";
 import { useLanguage } from "@/lib/LanguageContext";
 
 interface ContactFormProps {
@@ -14,7 +14,7 @@ interface ContactFormProps {
 
 export default function ContactForm({ onSubmit }: ContactFormProps) {
   const { toast } = useToast();
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -65,8 +65,8 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
       if (data.success) {
         // Show success toast with a random fun message
         toast({
-          title: "Mesaj Trimis!",
-          description: getRandomMessage(successMessages),
+          title: t("contact.success.title"),
+          description: getRandomSuccessMessage(language),
           variant: "default",
           duration: 5000,
         });
@@ -77,8 +77,8 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
       } else {
         // Show error toast with a random fun message
         toast({
-          title: "Eroare la trimitere",
-          description: getRandomMessage(errorMessages),
+          title: t("contact.error.title"),
+          description: getRandomErrorMessage(language),
           variant: "destructive",
           duration: 5000,
         });
@@ -87,8 +87,8 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
       console.error("Error sending message:", error);
       // Show error toast with a random fun message
       toast({
-        title: "Eroare la trimitere",
-        description: getRandomMessage(errorMessages),
+        title: t("contact.error.title"),
+        description: getRandomErrorMessage(language),
         variant: "destructive",
         duration: 5000,
       });
