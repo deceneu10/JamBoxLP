@@ -749,6 +749,30 @@ export const translations: Translations = {
     en: "Your email",
     ro: "Email-ul tău"
   },
+  "contact.or": {
+    en: "OR",
+    ro: "SAU"
+  },
+  "contact.phone.label": {
+    en: "Phone Number",
+    ro: "Numărul de Telefon"
+  },
+  "contact.phone.placeholder": {
+    en: "+40 123 456 789",
+    ro: "+40 123 456 789"
+  },
+  "contact.gdpr.consent": {
+    en: "I agree to the processing of my personal data in accordance with the <a href='/privacy-policy' target='_blank' class='text-primary hover:underline'>Privacy Policy</a> and <a href='/terms-of-service' target='_blank' class='text-secondary hover:underline'>Terms of Service</a>. I understand that my data will be used to respond to my inquiry and for marketing purposes related to JamBox services.",
+    ro: "Sunt de acord cu prelucrarea datelor mele personale în conformitate cu <a href='/privacy-policy' target='_blank' class='text-primary hover:underline'>Politica de Confidențialitate</a> și <a href='/terms-of-service' target='_blank' class='text-secondary hover:underline'>Termenii și Condițiile</a>. Înțeleg că datele mele vor fi folosite pentru a răspunde la întrebarea mea și în scopuri de marketing legate de serviciile JamBox."
+  },
+  "contact.gdpr.errorTitle": {
+    en: "Consent Required",
+    ro: "Consimțământ Necesar"
+  },
+  "contact.gdpr.errorMessage": {
+    en: "Please agree to the privacy policy and terms of service to continue.",
+    ro: "Te rog să accepți politica de confidențialitate și termenii de utilizare pentru a continua."
+  },
   "contact.message.label": {
     en: "Message",
     ro: "Mesaj"

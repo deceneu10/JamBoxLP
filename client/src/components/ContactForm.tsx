@@ -155,27 +155,28 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
           </select>
         </div>
         
-        <div className="mb-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div>
-            <Label htmlFor="email" className="block text-foreground font-medium mb-2">{t("contact.email.label")}</Label>
-            <Input 
-              type="email" 
-              id="email" 
-              name="email" 
-              value={formData.email}
-              onChange={handleChange}
-              className="w-full px-4 py-3 bg-background border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-foreground" 
-              placeholder={t("contact.email.placeholder")}
-              required
-              disabled={isSubmitting}
-            />
-          </div>
-          
-          <div className="flex flex-col">
-            <div className="flex items-center mb-2">
-              <span className="text-gray-400 text-sm mr-2">{t("contact.or")}</span>
+        <div className="mb-4">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-4 items-end">
+            <div className="md:col-span-2">
+              <Label htmlFor="email" className="block text-foreground font-medium mb-2">{t("contact.email.label")}</Label>
+              <Input 
+                type="email" 
+                id="email" 
+                name="email" 
+                value={formData.email}
+                onChange={handleChange}
+                className="w-full px-4 py-3 bg-background border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-foreground" 
+                placeholder={t("contact.email.placeholder")}
+                required
+                disabled={isSubmitting}
+              />
             </div>
-            <div>
+            
+            <div className="md:col-span-1 flex items-center justify-center">
+              <span className="text-gray-400 font-medium">{t("contact.or")}</span>
+            </div>
+            
+            <div className="md:col-span-2">
               <Label htmlFor="phone" className="block text-foreground font-medium mb-2">{t("contact.phone.label")}</Label>
               <Input 
                 type="tel" 
