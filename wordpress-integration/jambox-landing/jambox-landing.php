@@ -221,7 +221,7 @@ class JamBoxLanding {
         $jambox_instance = $this; // Pass instance to template
         
         ob_start();
-        include plugin_dir_path(__FILE__) . 'templates/landing-page.php';
+        include plugin_dir_path(__FILE__) . 'templates/landing-page-fixed.php';
         return ob_get_clean();
     }
 }
