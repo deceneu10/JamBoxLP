@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>JamBox - The Ultimate Multiplayer Mode for Music</title>
+    <meta name="description" content="Transform how people experience music at venues with JamBox. Create interactive experiences where everyone gets a say in what plays next." />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="JamBox - The Ultimate Multiplayer Mode for Music" />
+    <meta property="og:description" content="Transform how people experience music at venues with JamBox. Interactive music experiences for users and businesses." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jambox.app" />
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="module" crossorigin src="/assets/index-QH5bp7KG.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BQVKH3iv.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- Contact form override for standalone deployment -->
+    <script>
+      // Override contact form submission for standalone deployment
+      document.addEventListener('DOMContentLoaded', function() {
+        // Wait for React to render, then override the form
+        setTimeout(function() {
+          const form = document.querySelector('form');
+          if (form) {
+            form.addEventListener('submit', async function(e) {
+              e.preventDefault();
+              
+              const formData = new FormData(form);
+              const data = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                phone: formData.get('phone'),
+                establishmentName: formData.get('establishmentName'),
+                establishmentType: formData.get('establishmentType'),
+                message: formData.get('message'),
+                gdprConsent: formData.get('gdprConsent') === 'on'
+              };
+              
+              const submitBtn = form.querySelector('button[type="submit"]');
+              const originalText = submitBtn.textContent;
+              submitBtn.textContent = 'Sending...';
+              submitBtn.disabled = true;
+              
+              try {
+                const response = await fetch('/contact.php', {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json',
+                  },
+                  body: JSON.stringify(data)
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                  alert('Message sent successfully!');
+                  form.reset();
+                } else {
+                  alert('Error sending message: ' + result.message);
+                }
+              } catch (error) {
+                alert('Error sending message. Please try again.');
+              } finally {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+              }
+            });
+          }
+        }, 2000);
+      });
+    </script>
+  </body>
+</html>
