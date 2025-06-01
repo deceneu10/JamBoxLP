@@ -1,0 +1,73 @@
+Editare zona DNS din Zone Editor - cPanel
+Authors list
+IS
+Iulia Stratulat 
+FS
+Florentina Stamate
+Last updated: 28 mar. 2023 by Florentina Stamate
+După cum știm cu toții, un domeniu nu poate funcționa fără o zonă DNS. Deși, la adăugarea unui domeniu pe server se creează o zonă DNS default, aceasta trebuie uneori modificată.
+
+În cele ce urmează vă vom explica pas cu pas funcțiile acestei interfețe. Pentru a accesa zona autentificați-vă în contul cPanel și navigați la Domains >> Zone Editor.
+
+domains_zone_editor.png
+
+Această interfață vă permite adăugarea ușoară și rapidă a 3 tipuri de intrări (cele mai comune) în zona DNS, adică A, CNAME și MX. Pentru a adăuga o intrare, faceți click pe tipul de înregistrare pe care doriți să o adăugați și introduceți datele necesare, apoi faceți click pe butonul Add.
+
+ zoneedit2.png
+
+O interfață mai complexă poate fi găsită dacă mergem sub Manage, această opțiune se găsește în dreptul fiecărui domeniu adăugat pe contul dumneavoastră.
+
+zoneedit1.png
+
+Sunt câteva tipuri de intrări în zona DNS mai comune, acestea sunt:
+
+A - asociază numele de domeniu cu o adresă IP; de exemplu romarg.ro are asociată adresa IP 89.42.217.196;
+CNAME - definește aliasuri prin asocierea unui domeniu cu un altul; poate fi utilizat pentru definirea mai multor domenii fără a specifica de fiecare dată o adresă IP; de exemplu domeniu.ro directează către 89.42.217.196; putem adăuga un CNAME pentru mail.domeniu.ro la domeniu.ro;
+Notă! Un CNAME nu poate fi adăugat pentru domeniu.ro direct, acesta trebuie să aibă un A record.  
+
+TXT - aceste intrări sunt de obicei DKIM și SPF, necesare pentru validarea email-urilor și combaterea spoofing-ului;
+MX - aceste intrări din zona DNS stabilesc ce server este responsabil cu primirea de emailuri pentru domeniul utilizat. 
+
+Adăugare intrări DNS în cPanel 
+
+Pasul 1: Din Manage mergeți la butonul +Add Record.
+
+zoneedit3.png
+
+Pasul 2: Introduceți informațiile necesare:
+
+În primul câmp adăugați numele intrării (de exemplu domeniu.com sau subdomeniu);
+TTL - poate rămâne standard în cazul în care nu aveți de adăugat intrări la care este specificat un alt termen;
+Type - aici trebuie să selectați tipul de înregistrare ce trebuie adăugată (A, CNAME, TXT, MX);
+Record - datele corespunzătoare intrării ce doriți să o adăugați; acest câmp se modifică în funcție de tipul de intrare ce doriți să adăugați; de exemplu, pentru un A record, introduceți adresa IP către care domeniul să directeze, la CNAME - domeniul către care trebuie să adăugați înregistrarea, la MX - mail.domeniu.com.
+zoneedit5.png
+
+Pasul 3: Faceți click pe butonul Add Record.
+
+Gata, intrarea dorită a fost adăugată.
+
+ 
+Editarea intrărilor din zona DNS 
+
+Pasul 1: Selectați domeniul dorit din lista disponibilă și faceți click pe Manage. 
+
+zoneedit1.png
+
+Pasul 2: În fereastra ce se deschide aveți disponibile intrările existente, iar în partea dreaptă a ferestrei sub coloana Actions aveți butonul Edit. 
+
+zoneedit6_1.png
+
+Adăugați modificările necesare. De aici puteți schimba chiar și tipul intrării, de la A de exemplu la CNAME.
+
+zoneedit7_1.png
+
+Pasul 3: Faceți click pe butonul Save Record.
+
+ 
+Ștergerea intrărilor în zona DNS 
+
+După ce ați ajuns la pagina de editare a zonei DNS conform instrucțiunilor de mai sus, dacă doriți să ștergeți o intrare în zona DNS este suficient să acționați butonul Delete din dreptul liniei ce trebuie ștearsă și confirmată modificarea. 
+
+zoneedit6_2.png
+
+În cazul în care aveți nevoie de asistență suplimentară, echipa ROMARG vă stă la dispoziție prin email la adresa support@romarg.com.
