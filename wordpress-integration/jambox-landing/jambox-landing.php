@@ -13,7 +13,10 @@ if (!defined('ABSPATH')) {
 
 class JamBoxLanding {
     
+    private $translations = array();
+    
     public function __construct() {
+        $this->init_translations();
         add_action('init', array($this, 'init'));
         add_action('wp_enqueue_scripts', array($this, 'enqueue_assets'));
         add_action('wp_ajax_jambox_contact', array($this, 'handle_contact_form'));
@@ -22,6 +25,67 @@ class JamBoxLanding {
         
         // Add page creation on activation
         register_activation_hook(__FILE__, array($this, 'create_landing_pages'));
+    }
+    
+    private function init_translations() {
+        $this->translations = array(
+            'hero.title' => array(
+                'en' => 'The Ultimate Multiplayer Mode for Music',
+                'ro' => 'Modul Ultimate Multiplayer pentru Muzică'
+            ),
+            'hero.subtitle' => array(
+                'en' => 'Transform passive playlists into living memories. JamBox brings people together through music, creating unforgettable moments where everyone has a voice.',
+                'ro' => 'Transformă playlist-urile pasive în amintiri vii. JamBox unește oamenii prin muzică, creând momente de neuitat unde fiecare are o voce.'
+            ),
+            'hero.forUsers' => array(
+                'en' => 'For Users',
+                'ro' => 'Pentru Clienți'
+            ),
+            'hero.forBusinesses' => array(
+                'en' => 'For Venues',
+                'ro' => 'Pentru Localuri'
+            ),
+            'contact.title' => array(
+                'en' => 'Have a bar, pub or gym? Let the music bring you clients and revenue!',
+                'ro' => 'Ai un bar, pub sau sală de sport? Lasă muzica să îți aducă clienți și venituri!'
+            ),
+            'forUsers.title' => array(
+                'en' => 'For Clients',
+                'ro' => 'Pentru Clienți'
+            ),
+            'forUsers.subtitle' => array(
+                'en' => 'Take control of the music and create unforgettable moments with friends.',
+                'ro' => 'Preia controlul asupra muzicii și creează momente de neuitat cu prietenii.'
+            ),
+            'features.findVenues.title' => array(
+                'en' => 'Find Venues',
+                'ro' => 'Găsește Localuri'
+            ),
+            'features.findVenues.description' => array(
+                'en' => 'Discover bars, pubs, and gyms with JamBox near you.',
+                'ro' => 'Descoperă baruri, pub-uri și săli de sport cu JamBox lângă tine.'
+            ),
+            'features.queueMusic.title' => array(
+                'en' => 'Queue Your Music',
+                'ro' => 'Adaugă Muzică'
+            ),
+            'features.queueMusic.description' => array(
+                'en' => 'Add your favorite songs to the venue\'s playlist instantly.',
+                'ro' => 'Adaugă melodiile tale favorite în playlist-ul localului instant.'
+            ),
+            'features.connectShare.title' => array(
+                'en' => 'Connect & Share',
+                'ro' => 'Conectează-te și Împărtășește'
+            ),
+            'features.connectShare.description' => array(
+                'en' => 'Share musical moments and discover new favorites with others.',
+                'ro' => 'Împărtășește momente muzicale și descoperă noi favorite cu alții.'
+            )
+        );
+    }
+    
+    public function jambox_t($key, $lang = 'ro') {
+        return isset($this->translations[$key][$lang]) ? $this->translations[$key][$lang] : $key;
     }
     
     public function init() {
@@ -154,6 +218,7 @@ class JamBoxLanding {
     
     public function render_landing_page() {
         $language = $this->get_current_language();
+        $jambox_instance = $this; // Pass instance to template
         
         ob_start();
         include plugin_dir_path(__FILE__) . 'templates/landing-page.php';

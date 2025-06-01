@@ -1,6 +1,6 @@
 <?php
 // Get current language
-$language = $this->get_current_language();
+$language = $jambox_instance->get_current_language();
 ?>
 
 <div class="jambox-landing-page">
@@ -14,17 +14,17 @@ $language = $this->get_current_language();
                         <?php echo $jambox_instance->jambox_t('hero.title', $language); ?>
                     </h1>
                     <p class="text-xl mb-8 text-white">
-                        <?php echo $this->jambox_t('hero.subtitle', $language); ?>
+                        <?php echo $jambox_instance->jambox_t('hero.subtitle', $language); ?>
                     </p>
                     <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-4">
                         <a href="#for-users">
                             <button class="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-full font-bold text-center w-full sm:w-auto">
-                                <?php echo $this->jambox_t('hero.forUsers', $language); ?>
+                                <?php echo $jambox_instance->jambox_t('hero.forUsers', $language); ?>
                             </button>
                         </a>
                         <a href="#for-businesses">
                             <button class="bg-secondary hover:bg-secondary/90 text-white px-8 py-3 rounded-full font-bold text-center w-full sm:w-auto">
-                                <?php echo $this->jambox_t('hero.forBusinesses', $language); ?>
+                                <?php echo $jambox_instance->jambox_t('hero.forBusinesses', $language); ?>
                             </button>
                         </a>
                     </div>
@@ -47,24 +47,23 @@ $language = $this->get_current_language();
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
-                    <?php echo $language === 'en' ? 'For Clients' : 'Pentru Clienți'; ?>
+                    <?php echo $jambox_instance->jambox_t('forUsers.title', $language); ?>
                 </h2>
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-                    <?php echo $language === 'en' ? 'Take control of the music and create unforgettable moments with friends.' : 'Preia controlul asupra muzicii și creează momente de neuitat cu prietenii.'; ?>
+                    <?php echo $jambox_instance->jambox_t('forUsers.subtitle', $language); ?>
                 </p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-                <!-- User feature cards would go here -->
                 <div class="bg-card border border-gray-800 rounded-xl p-6 text-center hover:border-primary/50 transition-all duration-300">
                     <div class="w-16 h-16 mx-auto mb-4 bg-primary/20 rounded-full flex items-center justify-center">
                         <i class="fas fa-map-marker-alt text-2xl text-primary"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-foreground">
-                        <?php echo $language === 'en' ? 'Find Venues' : 'Găsește Localuri'; ?>
+                        <?php echo $jambox_instance->jambox_t('features.findVenues.title', $language); ?>
                     </h3>
                     <p class="text-gray-300">
-                        <?php echo $language === 'en' ? 'Discover bars, pubs, and gyms with JamBox near you.' : 'Descoperă baruri, pub-uri și săli de sport cu JamBox lângă tine.'; ?>
+                        <?php echo $jambox_instance->jambox_t('features.findVenues.description', $language); ?>
                     </p>
                 </div>
                 
@@ -73,10 +72,10 @@ $language = $this->get_current_language();
                         <i class="fas fa-music text-2xl text-secondary"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-foreground">
-                        <?php echo $language === 'en' ? 'Queue Your Music' : 'Adaugă Muzică'; ?>
+                        <?php echo $jambox_instance->jambox_t('features.queueMusic.title', $language); ?>
                     </h3>
                     <p class="text-gray-300">
-                        <?php echo $language === 'en' ? 'Add your favorite songs to the venue\'s playlist instantly.' : 'Adaugă melodiile tale favorite în playlist-ul localului instant.'; ?>
+                        <?php echo $jambox_instance->jambox_t('features.queueMusic.description', $language); ?>
                     </p>
                 </div>
                 
@@ -85,10 +84,10 @@ $language = $this->get_current_language();
                         <i class="fas fa-users text-2xl text-accent"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-foreground">
-                        <?php echo $language === 'en' ? 'Connect & Share' : 'Conectează-te și Împărtășește'; ?>
+                        <?php echo $jambox_instance->jambox_t('features.connectShare.title', $language); ?>
                     </h3>
                     <p class="text-gray-300">
-                        <?php echo $language === 'en' ? 'Share musical moments and discover new favorites with others.' : 'Împărtășește momente muzicale și descoperă noi favorite cu alții.'; ?>
+                        <?php echo $jambox_instance->jambox_t('features.connectShare.description', $language); ?>
                     </p>
                 </div>
             </div>
@@ -101,7 +100,7 @@ $language = $this->get_current_language();
             <div class="max-w-4xl mx-auto">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-accent to-primary">
-                        <?php echo $this->jambox_t('contact.title', $language); ?>
+                        <?php echo $jambox_instance->jambox_t('contact.title', $language); ?>
                     </h2>
                 </div>
                 
